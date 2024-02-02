@@ -1,0 +1,11 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.boton {
+    @include m.boton(v.$fireBrick);
+    &:hover {
+        background-color: v.$blanco;
+        color: v.$fireBrick;
+        border: 1px solid v.$fireBrick;
+    }
+}

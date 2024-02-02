@@ -4,9 +4,9 @@ $(document).ready(function () {
 
 
 function iniciarApp() {
-  navegacionFija();
+  //navegacionFija();
   crearGaleria();
-  scrollNav();
+ // scrollNav();
 }
 function scrollNav(){
   const enlaces = document.querySelectorAll(".navegacion-principal a");

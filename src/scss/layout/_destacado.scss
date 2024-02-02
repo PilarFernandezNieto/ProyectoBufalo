@@ -19,17 +19,19 @@
     flex-direction: column;
     justify-content: center;
     margin-top: 3rem;
+
+
     @include m.tablet{
         margin-top: 0;
         
     }
     h2 {
         margin-bottom: 2rem;
-    }
-    .fecha {
-        color: v.$fireBrick;
+         color: v.$fireBrick;
         font-weight: bold;
-
+        text-transform: uppercase;
+        letter-spacing: 1rem;
     }
+
 
 }

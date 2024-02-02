@@ -4,22 +4,13 @@
 .header {
   background-color: v.$oilBlack;
   min-height: 30rem;
-  @include m.tablet {
-    &.fijo {
-        top: 0;
-        left: 0;
-      position: fixed;
-      width: 100%;
-      z-index: 10;
-      box-shadow: 0.3rem 0.3rem 0.3rem gainsboro;
-    }
-  }
+
 
   @include m.tablet {
     min-height: 15rem;
     display: flex;
   }
-  img {
+  a img {
     width: 100%;
     margin-bottom: 3rem;
     @include m.tablet {

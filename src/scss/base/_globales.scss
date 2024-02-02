@@ -14,12 +14,6 @@ html {
 body {
   font-family: v.$fuente_principal;
   font-size: 1.6rem;
-  &.fijar-body {
-    overflow: hidden;
-  }
-  &.body-scroll {
-    padding-top: 19.4rem;
-  }
 }
 p {
   font-size: 2rem;
@@ -28,7 +22,6 @@ p {
 }
 .contenedor {
   width: 95%;
-  max-width: 120rem;
   margin: 0 auto;
 }
 
