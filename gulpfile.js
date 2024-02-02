@@ -3,6 +3,12 @@ const {src, dest, watch, parallel} =  require("gulp");
 // Dependencias CSS
 const sass = require("gulp-sass")(require("sass"));
 const plumber = require("gulp-plumber");
+/** ESTAS FUNCIONALIDADES SE EJECUTAN AL FINAL DEL PROYECTO PARA REDUCIR CODIGO */
+const autoprefixer = require("autoprefixer");
+const cssnano = require("cssnano");
+const postcss = require("gulp-postcss");
+
+const sourcemaps = require("gulp-sourcemaps");
 
 // Dependencias imágenes
 const cache = require("gulp-cache");
@@ -10,14 +16,19 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const avif = require("gulp-avif");
 
+//Dependencias js
+const terser = require("gulp-terser-js");
 
-function css(done){
-  src("src/scss/**/*.scss") // Identificar el archivo SASS
+
+function css(done) {
+  src("src/scss/**/*.scss") // identificar archivo sass
+    .pipe(sourcemaps.init({loadMaps: true})) //iniciar el mapa de archivos
     .pipe(plumber())
-    .pipe(sass()) // Compilarlo
-    .pipe(dest("build/css")); // Almacenar en el disco duro
-
-  done(); // Avisa a gulp de que llegamos al final
+    .pipe(sass()) //compilar
+    .pipe(postcss([autoprefixer(), cssnano()]))
+    .pipe(sourcemaps.write("."))
+    .pipe(dest("build/css")); //almacenar en el disco duro
+  done();
 }
 function imagenes(done){
   const opciones = {
@@ -53,6 +64,9 @@ function versionAvif(done) {
 
 function javascript(done){
   src("src/js/**/*.js")
+  .pipe(sourcemaps.init())
+  .pipe(terser())
+  .pipe(sourcemaps.write("."))
   .pipe(dest("build/js"));
 
   done();
