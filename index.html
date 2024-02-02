@@ -11,52 +11,236 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="stylesheet" href="build/css/app.css">
+    <script src="build/js/jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
     <header class="header">
         <div class="contenedor contenido-header">
-            <img src="img/logoBuf.png" alt="Logo Bufalo" class="img-fluid">
+            <img src="build/img/logoBuf.png" alt="Logo Bufalo" class="img-fluid">
             <nav class="navegacion-principal">
                 <a href="#">Historia</a>
                 <a href="#">Discografía</a>
                 <a href="#">Tienda</a>
                 <a href="#">Contacto</a>
+                <a href="#lineup">Line Up</a>
+                <a href="#galeria">Galería</a>
+                <a href="#boletos">Boletos</a>
             </nav>
 
         </div>
 
     </header>
     <section class="imagen">
-        <div class="overlay">
+        <div class="overlay-header">
             <div class="contenedor contenido-imagen">
                 <h2>The Electric Buffalo</h2>
                 <p>Patrolman</p>
             </div>
         </div>
-        <img src="img/bufalos_header2.jpg" alt="bufalos">
+        <picture>
+            <source srcset="build/img/bufalos_header2.avif" type="image/avif">
+            <source srcset="build/img/bufalos_header2.webp" type="image/webp">
+            <img src="build/img/bufalos_header2.jpg" alt="bufalos">
+        </picture>
+
 
     </section>
     <section class="contenedor contenido-destacado">
-        <div class="imagen">
-            <img src="img/cover_patrolman.jpg" alt="cover patrolman" class="img-fluid">
+        <div class="imagen cover">
+            <picture>
+                <source srcset="build/img/cover_patrolman.avif" type="image/avif" />
+                <source srcset="build/img/cover_patrolman.webp" type="image/webp" />
+                <img loading="lazy" width="200" height="300" src="build/img/cover_patrolman.jpg"
+                    alt="cover_patrolman" />
+            </picture>
         </div>
         <div class="contenido">
             <h2>Último trabajo</h2>
             <p class="fecha">Oviedo, Julio 2024</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic asperiores quos amet aliquam. Voluptas soluta commodi quas voluptatum modi corrupti eius  repudiandae, id velit voluptates quae asperiores non fugiat sequi?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic asperiores quos amet aliquam. Voluptas soluta commodi quas voluptatum modi corrupti eius repudiandae, id velit voluptates quae asperiores non fugiat sequi?
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic asperiores quos amet aliquam. Voluptas
+                soluta commodi quas voluptatum modi corrupti eius repudiandae, id velit voluptates quae asperiores non
+                fugiat sequi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic asperiores quos amet aliquam. Voluptas
+                soluta commodi quas voluptatum.
             </p>
         </div>
+    </section>
+    <section class="lineup" id="lineup">
+        <h3>Line Up</h3>
+        <p class="dia">Viernes 21</p>
 
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-amarillo">
+                <p class="nombre-escenario">Escenario Rock</p>
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Metallica</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Pearl Jam</span>
+                    </li>
+                    <li>
+                        20:00 | <span>KoRn</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Muse</span>
+                    </li>
+                    <li>
+                        18:00 | <span>Breaking Benjamin</span>
+                    </li>
+                    <li>
+                        17:00 | <span>30 Seconds to Mars</span>
+                    </li>
+
+                </ul>
+            </div> <!--fin-escenario-->
+            <div class="escenario edm bg-verde">
+                <p class="nombre-escenario">Escenario Rock</p>
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Deadmau5</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Tïesto</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Hardwell</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Dash Berlin</span>
+                    </li>
+
+                    <li>
+                        18:00 | <span>Fedde Legrand</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Audien</span>
+                    </li>
+
+                </ul>
+            </div> <!--fin-escenario-->
+        </div> <!--fin escenarios-contenedor-->
+        <p class="dia">Sábado 22</p>
+
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-verde">
+                <p class="nombre-escenario">Escenario Rock</p>
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Red Hot Chili Peppers</span>
+                    </li>
+                    <li>
+                        22:00 | <span>The Killers</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Deftones</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Limp Bizkit</span>
+                    </li>
+
+                    <li>
+                        18:00 | <span>Papa Roach</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Lamb of God</span>
+                    </li>
+
+                </ul>
+            </div> <!--fin-escenario-->
+            <div class="escenario edm bg-amarillo">
+                <p class="nombre-escenario">Escenario Rock</p>
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Paul Van Dyk</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Armin Van Buuren</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Above &amp; Beyond</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Eric Prdyz</span>
+                    </li>
+
+                    <li>
+                        18:00 | <span>Ferry Corsten</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Vini Vici</span>
+                    </li>
+
+                </ul>
+            </div> <!--fin-escenario-->
+        </div> <!--fin escenarios-contenedor-->
+    </section> <!--fin-lineup-->
+    <!-- GALERIA -->
+    <section class="galeria contenedor" id="galeria">
+        <h3>Galería</h3>
+        <ul class="galeria-imagenes">
+
+        </ul>
+    </section>
+    <!-- FIN GALERIA -->
+
+    <!-- BOLETOS -->
+    <section class="boletos bg-verde" id="boletos">
+        <h3>Boletos</h3>
+        <div class="contenedor contenedor-boletos">
+            <div class="basico pase">
+                <p class="nombre-pase">Pase 1 Día</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y bebida</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$100</p>
+
+                </footer>
+
+            </div>
+            <div class="premium pase">
+                <p class="nombre-pase">Pase 2 Días</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y bebida</li>
+                        <li>Camiseta del evento</li>
+                        <li>Acceso VIP</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$180</p>
+                </footer>
+
+            </div>
+        </div>
 
     </section>
+    <!-- FIN BOLETOS -->
+    
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>The Electric Buffalo. Todos los derechos reservados</p>
+
+    </footer>
+    <!-- FIN FOOTER -->
 
 
 
@@ -66,6 +250,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+    <script src="build/js/app.js"></script>
 
 </body>
 
