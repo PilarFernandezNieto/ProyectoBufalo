@@ -1,10 +1,10 @@
 @use "variables" as v;
+@use 'base/mixins' as m;
 
 html {
   font-size: 62.5%;
   box-sizing: border-box;
   scroll-behavior: smooth;
-
 }
 *,
 *:before,
@@ -21,9 +21,12 @@ p {
   line-height: 1.5;
 }
 .contenedor {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   max-width: 130rem;
+  @include m.desktop{
+    width: 80%;
+  }
 }
 
 a {
@@ -32,19 +35,20 @@ a {
 a:hover {
   color: initial;
 }
-h1,
-h2,
-h3 {
+h1 {
+  font-size: 4.2rem;
   margin: 0 0 5rem 0;
 }
-h1 {
-  font-size: 3.6rem;
+h2,
+h3 {
+  margin: 0 0 3rem 0;
 }
+
 h2 {
-    font-size: 3.6rem;
+  font-size: 3.4rem;
 }
 h3 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 img {
   max-width: 100%;
