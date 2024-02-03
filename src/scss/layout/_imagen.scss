@@ -1,6 +1,7 @@
 @use "base/variables" as v;
 @use "base/mixins" as m;
 
+
 .imagen {
   position: relative;
   max-height: 70rem;
@@ -16,31 +17,4 @@
     display: block;
   }
 }
-.contenido-imagen {
-  font-family: v.$fuente_secundaria;
-  position: absolute;
-  display: none;
-  bottom: 0rem;
-  left: 10rem;
-  @include m.desktopXL {
-    bottom: 1rem;
-  }
-  padding: 2rem;
-  h2 {
-    margin-bottom: 1rem;
-    color: v.$letras;
-    letter-spacing: 0.5rem;
-      
-  }
-  p {
-    display: inline-block;
-    color: v.$fireBrick;
-    text-transform: uppercase;
-    font-size: 6rem;
-    letter-spacing: 2.5rem;
 
-  }
-  @include m.tablet {
-    display: block;
-  }
-}

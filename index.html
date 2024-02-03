@@ -35,18 +35,12 @@
         </div>
 
     </header>
-    <section class="imagen">
-        <div class="overlay-header">
-            <div class="contenedor contenido-imagen">
-                <h2>The Electric Buffalo</h2>
-                <p>Patrolman</p>
-            </div>
+    <section class="imagen-header">
+        <div class="overlay-header"></div>
+        <div class="contenedor contenido-imagen">
+            <h2>The Electric Buffalo</h2>
+            <p>Patrolman</p>
         </div>
-        <picture>
-            <source srcset="build/img/bufalos_header2.avif" type="image/avif">
-            <source srcset="build/img/bufalos_header2.webp" type="image/webp">
-            <img src="build/img/bufalos_header2.jpg" alt="bufalos">
-        </picture>
 
 
     </section>
@@ -74,9 +68,9 @@
                     <div class="">
                         <!-- BOTÓN QUE ACTIVA EL AUDIO -->
                         <p>
-                            <button class="boton" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
-                                aria-controls="collapseExample" title="new_song">
+                            <button class="boton-fireBrick" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
+                                title="new_song">
                                 Escúchalo
                             </button>
                         </p>
@@ -92,7 +86,19 @@
         </div>
     </section>
     <!-- FIN CONTENIDO DESTACADO -->
-    
+    <!-- IMAGEN CENTRAL -->
+    <section class="imagen-central">
+        <div class="overlay-central"></div>
+        <div class="contenido-central">
+            <h3>¿Quieres contactar?</h3>
+            <p>Rellena el formulario y nos pondremos en contacto contigo.</p>
+            <a href="contacto.html" class="boton-fireBrick">Contáctanos</a>
+        </div>
+
+
+    </section>
+    <!-- FIN IMAGEN CENTRAL -->
+
     <!-- NOTICIAS -->
     <section class="seccion contenedor">
         <h3 class="text-center">Noticias</h3>
@@ -105,30 +111,78 @@
                 </picture>
                 <div class="contenido-noticias">
                     <h3>Volvemos a la carga</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ab doloribus numquam quibusdam reiciendis pariatur obcaecati neque eveniet expedita optio ea, aut ad nobis rerum quidem vero beatae cum consequuntur dicta vel blanditiis accusamus delectus eum atque! Voluptates nulla velit possimus consequatur tempore, magni, corporis nisi animi tenetur explicabo et?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ab doloribus numquam quibusdam
+                        reiciendis pariatur obcaecati neque eveniet expedita optio ea, aut ad nobis rerum quidem vero
+                        beatae cum consequuntur dicta vel blanditiis accusamus delectus eum atque! Voluptates nulla
+                        velit possimus consequatur tempore, magni, corporis nisi animi tenetur explicabo et?</p>
                     <p class="fecha">02/02/2024</p>
-                    <a href="" class="boton">Más...</a>
+                    <a href="" class="boton-fireBrick">Más...</a>
+
+                </div>
+            </div>
+            <div class="noticia">
+                <picture>
+                    <source srcset="build/img/ELECTRICBUFFALO2023-140.webp" type="image/webp">
+                    <source srcset="build/img/ELECTRICBUFFALO2023-140.jpg" type="image/jpeg">
+                    <img loading="lazy" src="build/img/ELECTRICBUFFALO2023-140.jpg" alt="ELECTRIC_BUFFALO">
+                </picture>
+                <div class="contenido-noticias">
+                    <h3>Volvemos a la carga</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ab doloribus numquam quibusdam
+                        reiciendis
+                        pariatur obcaecati neque eveniet expedita optio ea, aut ad nobis rerum quidem vero beatae cum
+                        consequuntur
+                        dicta vel blanditiis accusamus delectus eum atque! Voluptates nulla velit possimus consequatur
+                        tempore,
+                        magni, corporis nisi animi tenetur explicabo et?</p>
+                    <p class="fecha">02/02/2024</p>
+                    <a href="" class="boton-fireBrick">Más...</a>
+
+                </div>
+            </div>
+            <div class="noticia">
+                <picture>
+                    <source srcset="build/img/_DSC9433.webp" type="image/webp">
+                    <source srcset="build/img/_DSC9433.jpg" type="image/jpeg">
+                    <img loading="lazy" src="build/img/_DSC9433.jpg" alt="ELECTRIC_BUFFALO">
+                </picture>
+                <div class="contenido-noticias">
+                    <h3>Volvemos a la carga</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ab doloribus numquam quibusdam
+                        reiciendis
+                        pariatur obcaecati neque eveniet expedita optio ea, aut ad nobis rerum quidem vero beatae cum
+                        consequuntur
+                        dicta vel blanditiis accusamus delectus eum atque! Voluptates nulla velit possimus consequatur
+                        tempore,
+                        magni, corporis nisi animi tenetur explicabo et?</p>
+                    <p class="fecha">02/02/2024</p>
+                    <a href="" class="boton-fireBrick">Más...</a>
 
                 </div>
             </div>
         </div>
+        <div class="alinear-derecha">
+            <a href="noticias.html" class="boton-fireBrick">Ver todas</a>
+        </div>
     </section>
     <!-- FIN NOTICIAS -->
 
-    <!-- GALERIA -->
-    <section class="galeria contenedor" id="galeria">
-        <h3>Galería</h3>
-        <ul class="galeria-imagenes">
 
-        </ul>
-    </section>
-    <!-- FIN GALERIA -->
+
+
 
 
 
     <!-- FOOTER -->
     <footer class="site-footer">
+        <nav class="navegacion-principal">
+            <a href="#">Historia</a>
+            <a href="#">Discografía</a>
+            <a href="#">Tienda</a>
+            <a href="#">Contacto</a>
+        </nav>
         <p>The Electric Buffalo. Todos los derechos reservados</p>
+
 
     </footer>
     <!-- FIN FOOTER -->
@@ -142,6 +196,7 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
     <script src="build/js/app.js"></script>
+    <script src="build/js/bundle.min.js"></script>
 
 </body>
 

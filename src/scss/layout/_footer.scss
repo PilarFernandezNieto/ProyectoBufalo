@@ -1,11 +1,17 @@
 @use 'base/variables' as v;
 
 .site-footer {
-    background-color: v.$rosa;
+    background-color: v.$negro;
     padding: 1rem;
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     p {
         margin: 0;
         text-align: center;
         color: v.$blanco;
+        font-size: 1.2rem;
     }
 }

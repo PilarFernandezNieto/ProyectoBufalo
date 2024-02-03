@@ -21,12 +21,16 @@ p {
   line-height: 1.5;
 }
 .contenedor {
-  width: 95%;
+  width: 80%;
   margin: 0 auto;
+  max-width: 130rem;
 }
 
 a {
   text-decoration: none;
+}
+a:hover {
+  color: initial;
 }
 h1,
 h2,
@@ -47,4 +51,5 @@ img {
   width: 100%;
   height: auto;
   display: block;
+  border: none;
 }

@@ -2,9 +2,8 @@
 @use "base/mixins" as m;
 
 .header {
-  background-color: v.$oilBlack;
+  background-color: v.$negro;
   min-height: 30rem;
-
 
   @include m.tablet {
     min-height: 15rem;
@@ -14,16 +13,64 @@
     width: 100%;
     margin-bottom: 3rem;
     @include m.tablet {
+      width: 75%;
+    }
+    @include m.desktopXL{   
       width: 50%;
     }
   }
   .contenido-header {
     padding: 2rem;
+    max-width: none;
     @include m.tablet {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
+  }
+}
+.no-webp .imagen-header {
+  background-image: url(/build/img/bufalos_header2.jpg);
+}
+.webp .imagen-header {
+  background-image: url(/build/img/bufalos_header2.webp);
+}
+.imagen-header {
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  min-height: 20rem;
+  @include m.tablet{    
+    min-height: 50rem;
+    
+  }
+}
+.contenido-imagen {
+  font-family: v.$fuente_secundaria;
+  position: absolute;
+  display: none;
+  bottom: 0rem;
+  left: 10rem;
+  @include m.desktopXL {
+    bottom: 1rem;
+  }
+  padding: 2rem;
+  h2 {
+    margin-bottom: 1rem;
+    color: v.$letras;
+    letter-spacing: 0.5rem;
+      
+  }
+  p {
+    display: inline-block;
+    color: v.$fireBrick;
+    text-transform: uppercase;
+    font-size: 6rem;
+    letter-spacing: 2.5rem;
+
+  }
+  @include m.tablet {
+    display: block;
   }
 }
 .navegacion-principal {

@@ -5,13 +5,8 @@
     padding: 5rem 0;
     @include m.tablet{
         @include m.grid(2, 5rem);
-        width: 80%;
     }
-    @include m.desktop{
-        width: 70%;
-    }
-        
-    }
+}
     
 
 .contenido {
@@ -31,6 +26,9 @@
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 1rem;
+    }
+    p {
+        line-height: 1.8;
     }
 
 
