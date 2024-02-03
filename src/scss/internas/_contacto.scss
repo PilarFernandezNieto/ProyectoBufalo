@@ -1,0 +1,31 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenedor-formulario{
+    width: 50%;
+    margin: 5rem auto;
+}
+.formulario {
+    border: 1px solid v.$fireBrick;
+    border-radius: 3.75px;
+    padding: 2rem;
+    label {
+        font-size: 2rem;
+        text-transform: uppercase;
+        display: block;
+        font-weight: 700;
+        color: v.$fireBrick;
+    }
+    input:not([type="submit"], input[type="checkbox"]),
+    textarea {
+        padding: 1rem;
+        border-radius: 3.75px;
+        border: 1px solid gainsboro;
+        width: 100%;
+       
+    }
+    .campo {
+        margin-top: 1rem;
+    }
+
+}

@@ -3,6 +3,10 @@
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
+.seccion5 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
 .contenido-centrado {
     max-width: 80rem;
 }
@@ -10,4 +14,7 @@
 .alinear-derecha {
     display: flex;
     justify-content: flex-end;
+}
+.alto-min {
+    min-height: 70vh;
 }
