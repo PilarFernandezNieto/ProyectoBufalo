@@ -1,10 +1,15 @@
-@use "base/variables" as v;
-@use "base/mixins" as m;
-
 .boton-fireBrick {
-  @include m.boton(v.$fireBrick, inline-block);
+  @include boton($fireBrick, inline-block);
   &:hover {
-    background-color: darken(v.$fireBrick, 10);
-    color: v.$blanco;
+    background-color: darken($fireBrick, 10);
+    color: $blanco;
   }
+}
+.boton-fireBrick-block {
+    @include boton($fireBrick, block);
+  &:hover {
+    background-color: darken($fireBrick, 10);
+    color: $blanco;
+  }
+
 }

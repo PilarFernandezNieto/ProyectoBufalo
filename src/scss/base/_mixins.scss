@@ -1,4 +1,3 @@
-@use "variables" as v;
 /*@mixin heading($color: black, $border-radius: false) {
     text-transform: uppercase;
     font-size: 2.4rem;
@@ -12,22 +11,22 @@
 /** GRID ***/
 
 @mixin telefono {
-  @media (min-width: v.$telefono) {
+  @media (min-width: $telefono) {
     @content;
   }
 }
 @mixin tablet {
-  @media (min-width: v.$tablet) {
+  @media (min-width: $tablet) {
     @content;
   }
 }
 @mixin desktop {
-  @media (min-width: v.$desktop) {
+  @media (min-width: $desktop) {
     @content;
   }
 }
 @mixin desktopXL {
-  @media (min-width: v.$desktopXL) {
+  @media (min-width: $desktopXL) {
     @content;
   }
 }
@@ -45,7 +44,7 @@
 
 @mixin boton($bgColor, $display) {
   background-color: $bgColor;
-  color: v.$blanco;
+  color: $blanco;
   text-decoration: none;
   padding: 1rem 3rem;
   text-align: center;

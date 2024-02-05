@@ -1,28 +1,25 @@
-@use "base/variables" as v;
-@use "base/mixins" as m;
-
 .header {
-  background-color: v.$negro;
+  background-color: $negro;
   min-height: 30rem;
 
-  @include m.tablet {
+  @include tablet {
     min-height: 15rem;
     display: flex;
   }
   a img {
     width: 100%;
     margin-bottom: 3rem;
-    @include m.tablet {
+    @include tablet {
       width: 75%;
     }
-    @include m.desktopXL{   
+    @include desktopXL{   
       width: 50%;
     }
   }
   .contenido-header {
     padding: 2rem;
     max-width: none;
-    @include m.tablet {
+    @include tablet {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -40,55 +37,68 @@
   background-size: cover;
   position: relative;
   min-height: 20rem;
-  @include m.tablet{    
+  @include tablet{    
     min-height: 50rem;
     
   }
 }
 .contenido-imagen {
-  font-family: v.$fuente_secundaria;
+  font-family: $fuente_secundaria;
   position: absolute;
   display: none;
   bottom: 0rem;
   left: 10rem;
-  @include m.desktopXL {
+  @include desktopXL {
     bottom: 1rem;
   }
   padding: 2rem;
   h2 {
     margin-bottom: 1rem;
-    color: v.$letras;
+    color: $letras;
     letter-spacing: 0.5rem;
       
   }
   p {
     display: inline-block;
-    color: v.$fireBrick;
+    color: $fireBrick;
     text-transform: uppercase;
     font-size: 6rem;
     letter-spacing: 2.5rem;
 
   }
-  @include m.tablet {
+  @include tablet {
     display: block;
   }
 }
 .navegacion-principal {
-  @include m.tablet {
+  @include tablet {
     display: flex;
     gap: 2rem;
   }
   a {
     display: block;
     text-align: center;
-    color: v.$letras;
+    color: $letras;
     font-size: 2rem;
     margin-bottom: 1rem;
-    @include m.tablet {
+    @include tablet {
       margin: 0;
     }
     &:hover {
-      color: v.$fireBrick;
+      color: $fireBrick;
     }
   }
+}
+.header-derecha {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+}
+.redes-sociales {
+  a{
+    color: $letras;
+    font-size: 3rem;
+  }
+
 }
