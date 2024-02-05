@@ -1,0 +1,22 @@
+.contenedor-discos {
+  .disco {
+    margin: 5rem 0;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid gainsboro;
+    @include tablet {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 2rem;
+      align-items: start;
+    }
+    @include desktopXL{
+        align-items: center;
+    }
+    .contenido-disco {
+        margin-top: 1rem;
+        @include tablet{
+            margin-top: 0;
+        }
+    }
+  }
+}
