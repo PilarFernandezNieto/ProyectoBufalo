@@ -1,7 +1,10 @@
 .contenedor-noticias {
   margin: 0 auto;
-  @include tablet {
-    @include grid(3, 2rem);
+  @include desktop {
+    @include grid(2, 2rem);
+  }
+  @include desktopXL{
+   @include grid(3,2rem);
   }
 }
 .noticia {

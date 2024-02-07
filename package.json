@@ -4,7 +4,6 @@
   "description": "Web Electric Buffalo",
   "main": "index.js",
   "scripts": {
-
     "dev": "gulp"
   },
   "keywords": [
@@ -31,4 +30,5 @@
     "sass": "^1.49.9",
     "terser": "^4.8.0"
   }
+
 }

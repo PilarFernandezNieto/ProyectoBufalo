@@ -7,39 +7,19 @@ function iniciarApp() {
   //navegacionFija();
   //crearGaleria();
  // scrollNav();
+ menuResponsive();
 }
-function scrollNav(){
-  const enlaces = document.querySelectorAll(".navegacion-principal a");
-  enlaces.forEach(enlace => {
-    enlace.addEventListener("click", (e)=>{
-      const seccionScroll = e.target.attributes.href.value;
-      const seccion = document.querySelector(seccionScroll);
-      seccion.scrollIntoView({
-        behavior: "smooth"
-      });
-
-      
-    })
-  })
+function menuResponsive(){
+  const menuMobile = document.querySelector(".menu-mobile");
+  menuMobile.addEventListener("click", mostrarNavegacion);
+}
+function mostrarNavegacion() {
+  const navegacion = document.querySelector(".navegacion-principal");
+  navegacion.classList.toggle("mostrar");
 }
 
-function navegacionFija(){
-  const barra = document.querySelector(".header");
-  const contenidoDestacado = document.querySelector(".contenido-destacado");
-  const body = document.querySelector("body");
 
-  window.addEventListener("scroll", () => {
-    if(contenidoDestacado.getBoundingClientRect().top < 0){
-     barra.classList.add("fijo");
-     body.classList.add("body-scroll");
-      
-    }else {
-     barra.classList.remove("fijo");
-     body.classList.remove("body-scroll");
-      
-    }
-  })
-}
+
 
 function crearGaleria() {
   const galeria = document.querySelector(".galeria-imagenes");

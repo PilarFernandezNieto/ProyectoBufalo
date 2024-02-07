@@ -1,57 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>The Electric Buffalo | Inicio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="build/css/app.css">
-    <link rel="stylesheet" href="build/css/app.css.map">
-    <script src="build/js/jquery-3.7.1.min.js"></script>
-    <script src="https://kit.fontawesome.com/91eae316a2.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    <header class="header">
-
-
-        <div class="contenedor contenido-header">
-
-            <a href="/"><img src="build/img/logoBuf.png" alt="Logo Bufalo" class="img-fluid"></a>
-            <div class="header-derecha">
-                <div class="redes-sociales">
-                    <a href="https://www.youtube.com/@theelectricbuffalo666" class="youtube" target="_blank">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                    <a href="https://www.instagram.com/theelectricbuffalo/" class="insta" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@theelectricbuffalo666" target="_blank">
-                        <i class="fa-brands fa-spotify"></i>
-                    </a>
-                </div>
-                <nav class="navegacion-principal">
-                    <a href="historia.html">Historia</a>
-                    <a href="discografia.html">Discografía</a>
-                    <a href="tienda.html">Tienda</a>
-                    <a href="contacto.html">Contacto</a>
-                </nav>
-            </div>
-
-        </div>
-
-    </header>
+<?php
+    require "includes/funciones.php";
+    incluirTemplate("header");
+?>
     <section class="imagen-header">
         <div class="overlay-header"></div>
         <div class="contenedor contenido-imagen">
@@ -110,9 +60,9 @@
                 </a>
                 <a href="https://www.instagram.com/theelectricbuffalo/" target="_blank">
                     <picture>
-                        <source srcset="build/img/Instagram_logo_2022.svg.webp" type="image/webp" />
-                        <source srcset="build/img/Instagram_logo_2022.svg.png" type="image/png" />
-                        <img loading="lazy" width="200" height="300" src="build/img/Instagram_logo_2022.svg.png"
+                        <source srcset="build/img/Instagram_logo_2022.webp" type="image/webp" />
+                        <source srcset="build/img/Instagram_logo_2022.png" type="image/png" />
+                        <img loading="lazy" width="200" height="300" src="build/img/Instagram_logo_2022.png"
                             alt="logo-instagram" class="instagram" />
                     </picture>
                 </a>
@@ -135,7 +85,7 @@
         <div class="contenido-central">
             <h3>¿Quieres contactar?</h3>
             <p>Rellena el formulario y nos pondremos en contacto contigo.</p>
-            <a href="contacto.html" class="boton-fireBrick">Contáctanos</a>
+            <a href="contacto.php" class="boton-fireBrick">Contáctanos</a>
         </div>
 
 
@@ -159,7 +109,7 @@
                         beatae cum consequuntur dicta vel blanditiis accusamus delectus eum atque! Voluptates nulla
                         velit possimus consequatur tempore, magni, corporis nisi animi tenetur explicabo et?</p>
                     <p class="fecha alinear-derecha">02/02/2024</p>
-                    <a href="noticia.html" class="boton-fireBrick">Más...</a>
+                    <a href="noticia.php" class="boton-fireBrick">Más...</a>
 
                 </div>
             </div>
@@ -179,7 +129,7 @@
                         tempore,
                         magni, corporis nisi animi tenetur explicabo et?</p>
                     <p class="fecha alinear-derecha">02/02/2024</p>
-                    <a href="noticia.html" class="boton-fireBrick">Más...</a>
+                    <a href="noticia.php" class="boton-fireBrick">Más...</a>
 
                 </div>
             </div>
@@ -199,48 +149,25 @@
                         tempore,
                         magni, corporis nisi animi tenetur explicabo et?</p>
                     <p class="fecha alinear-derecha">02/02/2024</p>
-                    <a href="noticia.html" class="boton-fireBrick">Más...</a>
+                    <a href="noticia.php" class="boton-fireBrick">Más...</a>
 
                 </div>
             </div>
         </div>
         <div class="alinear-derecha">
-            <a href="noticias.html" class="boton-fireBrick">Ver todas</a>
+            <a href="noticias.php" class="boton-fireBrick">Ver todas</a>
         </div>
     </section>
     <!-- FIN NOTICIAS -->
 
+    <?php 
+        incluirTemplate("footer");
+    ?>
 
 
 
 
 
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
-        <nav class="navegacion-principal">
-            <a href="historia.html">Historia</a>
-            <a href="discografia.html">Discografía</a>
-            <a href="tienda.html">Tienda</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-        <p>The Electric Buffalo. Todos los derechos reservados</p>
 
-
-    </footer>
-    <!-- FIN FOOTER -->
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
-    <script src="build/js/app.js"></script>
-    <script src="build/js/bundle.min.js"></script>
-
-</body>
-
-</html>
+    
