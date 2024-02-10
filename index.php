@@ -93,7 +93,7 @@ $db=conectarDB();
     <h3 class="text-center">Noticias</h3>
     <?php 
       
-        incluirTemplate("noticias"); ?>
+        incluirTemplate("noticias_portada"); ?>
     
     <div class="alinear-derecha">
         <a href="noticias.php" class="boton-fireBrick">Ver todas</a>
