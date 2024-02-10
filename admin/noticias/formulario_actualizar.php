@@ -1,6 +1,6 @@
 <?php
 require "../../includes/app.php";
-incluirTemplate("admin_sidebar");
+incluirTemplate("sidebar_menu");
 $db = conectarDB();
 $id = filter_var($_GET["id"]);
 
@@ -140,4 +140,4 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </section>
 
 <?php
-incluirTemplate("admin_footer");
+incluirTemplate("sidebar_footer");

@@ -9,7 +9,7 @@
 
 <div class="contenedor-noticias">
     <?php while($noticia = mysqli_fetch_assoc($consulta)): ?>
-    <div class="noticia escala">
+    <div class="noticia">
         <picture>
             <source srcset="build/img/ELECTRICBUFFALO2023-67.webp" type="image/webp">
             <source srcset="build/img/ELECTRICBUFFALO2023-67.jpg" type="image/jpeg">
