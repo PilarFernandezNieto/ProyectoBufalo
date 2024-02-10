@@ -63,12 +63,13 @@
         background-color: $exito;
     }
 }
-.listado_noticias {
+.listado_noticias, .admin {
     margin-top: 10rem;
     h1 {
         text-align: center;
     }
 }
+
 .dataTables_filter, .dataTables_length {
     margin-bottom: 3rem;
 }

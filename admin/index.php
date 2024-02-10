@@ -3,13 +3,13 @@
 require "../includes/app.php";
 incluirTemplate("sidebar_menu");
 ?>
-<main class="app-content">
+<main class="app-content contenedor seccion admin">
   <div class="app-title">
     <div>
       <h1><i class="bi bi-speedometer"></i> Panel Administrador - The Electric Buffalo</h1>
     </div>
     <ul class="app-breadcrumb breadcrumb">
-      <li class="breadcrumb-item"><i class="bi bi-house-door fs-6"></i></li>
+      <li class="breadcrumb-item"><i class="bi bi-house-door"></i></li>
       <li class="breadcrumb-item"><a href="#">Administador</a></li>
     </ul>
   </div>
