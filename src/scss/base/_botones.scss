@@ -13,3 +13,17 @@
   }
 
 }
+.boton-verde {
+  @include boton-accion($exito, inline-block);
+    &:hover {
+    background-color: darken($exito, 10);
+    color: $blanco;
+  }
+}
+.boton-rojo {
+  @include boton-accion($error, inline-block);
+    &:hover {
+    background-color: darken($error, 10);
+    color: $blanco;
+  }
+}

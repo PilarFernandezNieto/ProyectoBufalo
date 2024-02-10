@@ -1,5 +1,6 @@
 <?php
-include "./includes/templates/header.php";
+require "includes/app.php";
+incluirTemplate("header");
 ?>
 <main class="contenedor-formulario">
     <h1>Contacta con nosotros</h1>

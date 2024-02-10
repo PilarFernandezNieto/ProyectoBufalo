@@ -1,5 +1,6 @@
 $(document).ready(function () {
   iniciarApp();
+  
 });
 
 
@@ -8,6 +9,7 @@ function iniciarApp() {
   //crearGaleria();
  // scrollNav();
  menuResponsive();
+
 }
 function menuResponsive(){
   const menuMobile = document.querySelector(".menu-mobile");

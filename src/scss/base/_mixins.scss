@@ -53,3 +53,14 @@
   border: 1px solid darken($bgColor, 10);
   display: $display;
 }
+@mixin boton-accion($bgColor, $display){
+   background-color: $bgColor;
+  color: $blanco;
+  text-decoration: none;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 3.75px;
+  border: 1px solid $bgColor;
+  display: $display;
+
+}
