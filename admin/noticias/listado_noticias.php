@@ -22,37 +22,37 @@ incluirTemplate("sidebar_menu");
 
         </div>
         <ul class="app-breadcrumb breadcrumb side">
-            <li class="breadcrumb-item"><i class="bi bi-house-door fs-6"></i></li>
-            <li class="breadcrumb-item">Tables</li>
-            <li class="breadcrumb-item active"><a href="#">Data Table</a></li>
+            <li class="breadcrumb-item"><i class="bi bi-house-door"></i></li>
+            <li class="breadcrumb-item">Noticias</li>
+            <li class="breadcrumb-item active"><a href="listado_noticias.php">Listado de noticias</a></li>
         </ul>
     </div>
-    <div class="row">
+    <div class="row seccion">
         <div class="col-md-12">
             <div class="tile">
                 <div class="tile-body">
                     <div class="table-responsive">
                         <table class="table table-hover table-bordered" id="listado_noticias">
-                                <thead>
+                            <thead>
+                                <tr>
+                                    <th>#ID</th>
+                                    <th>Título</th>
+                                    <th>Introducción</th>
+                                    <th>Imagen</th>
+                                    <th>Creada</th>
+                                    <th>Fecha</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php while ($noticia = mysqli_fetch_assoc($consulta)) : ?>
+                                    <!-- <?php //debuguear($noticia, false); 
+                                            ?> -->
                                     <tr>
-                                        <th>#ID</th>
-                                        <th>Título</th>
-                                        <th>Introducción</th>
-                                        <th>Imagen</th>
-                                        <th>Creada</th>
-                                        <th>Fecha</th>
-                                        <th>Acciones</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php while ($noticia = mysqli_fetch_assoc($consulta)) : ?>
-                                        <!-- <?php //debuguear($noticia, false); 
-                                                ?> -->
-                                        <tr>
-                                            <td><?php echo $noticia["id"]; ?></td>
-                                            <td><?php echo $noticia["titulo"]; ?></td>
-                                            <td><?php echo $noticia["intro"]; ?></td>
-                                            <td><img src=" ../../imagenes/<?php echo $noticia['imagen']; ?>" style="width: 150px" alt="">
+                                        <td><?php echo $noticia["id"]; ?></td>
+                                        <td><?php echo $noticia["titulo"]; ?></td>
+                                        <td><?php echo $noticia["intro"]; ?></td>
+                                        <td><img src=" ../../imagenes/<?php echo $noticia['imagen']; ?>" style="width: 150px" alt="">
                             </td>
                             <td><?php echo fechas($noticia["fecha_creacion"]); ?></td>
                             <td><?php echo fechas($noticia["fecha"]); ?></td>
@@ -130,4 +130,4 @@ incluirTemplate("sidebar_menu");
 
 <?php
 mysqli_close($db);
-incluirTemplate("admin_footer");
+incluirTemplate("sidebar_footer");
