@@ -126,6 +126,7 @@ incluirTemplate("sidebar_menu");
                 <div class="mb-3">
                     <label for="imagen" class="form-label">Imagen</label>
                     <input type="file" id="imagen" name="imagen" accept="image/jpeg, image/png">
+                    <img src="/imagenes/<?php echo $noticia['imagen']; ?>" alt="imagen_noticia" style="width:150px" class="mt-3">
                 </div>
                 <div class="mb-3">
                     <label for="fecha">Fecha</label>
