@@ -1,13 +1,13 @@
 <?php
 require "../../includes/app.php";
-incluirTemplate("admin_sidebar");
 $db = conectarDB();
 $id = filter_var($_GET["id"]);
+
+
 
 if (!$id) {
     header("Location: /admin");
 }
-
 $query = "SELECT * FROM noticias WHERE id={$id}";
 $consulta = mysqli_query($db, $query);
 $noticia = mysqli_fetch_assoc($consulta);
@@ -23,7 +23,6 @@ $fecha = $noticia["fecha"];
 $fecha_creacion = $noticia["fecha_creacion"];
 $imagenNoticia = $noticia["imagen"];
 
-
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $titulo = mysqli_real_escape_string($db, $_POST["titulo"]);
     $intro = mysqli_real_escape_string($db, $_POST["intro"]);
@@ -31,7 +30,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $fecha = mysqli_real_escape_string($db, $_POST["fecha"]);
     $fecha_creacion = mysqli_real_escape_string($db, date("Y-m-d"));
     $imagen = $_FILES["imagen"];
-
 
     // TODO VALIDAR UNA EXTENSIÓN MÍNIMA DE TEXTO DE LA NOTICIA
     // if(strlen($texto) < 50){
@@ -64,27 +62,21 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $nombreImagen = "";
 
         /** Elimina las imágenes que se actualizan **/
-        if($imagen["name"]){
-            unlink($carpetaImagenes.$noticia["imagen"]);
+        if ($imagen["name"]) {
+            unlink($carpetaImagenes . $noticia["imagen"]);
             $nombreImagen = md5(uniqid(rand(), true)) . ".jpg";
             move_uploaded_file($imagen["tmp_name"], $carpetaImagenes . $nombreImagen);
         } else {
             $nombreImagen = $noticia["imagen"];
         }
-        
-
-
-       
 
         $query = "UPDATE noticias SET titulo='{$titulo}', intro='{$intro}', texto='{$texto}', imagen='{$nombreImagen}', fecha='{$fecha}' WHERE id={$id}";
 
-
-
         try {
             $resultado = $db->query($query);
-
             if ($resultado) {
-                header("Location: listado_noticias.php?exito=true&accion=actualizar");
+                header("location: listado_noticias.php?exito=true&accion=actualizar");
+                exit;
             } else {
                 echo "Error al insertar registro: No se pudo realizar la inserción.";
             }
@@ -93,6 +85,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         }
     }
 }
+
+incluirTemplate("sidebar_menu");
 
 
 ?>
@@ -132,7 +126,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <label for="fecha">Fecha</label>
             <input type="date" id="fecha" name="fecha" value="<?php echo $fecha; ?>">
         </div>
-
         <input type="submit" class="boton-fireBrick" value="Actualizar">
 
     </form>
@@ -140,4 +133,4 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </section>
 
 <?php
-incluirTemplate("admin_footer");
+incluirTemplate("sidebar_footer");

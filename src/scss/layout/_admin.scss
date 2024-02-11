@@ -48,3 +48,16 @@
 .swal2-modal{
     font-size: 1.6rem;
 }
+
+.formulario-admin {
+    margin-top: 10rem;
+    .formulario {
+        border: none;
+        input::placeholder, textarea::placeholder {
+            font-size: 1.6rem;
+        }
+    }
+    .form-control[type="file"]{
+        font-size: 1.6rem;
+    }
+}
