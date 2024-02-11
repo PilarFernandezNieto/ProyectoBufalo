@@ -3,6 +3,8 @@
 <script src="../../build/js/jquery-3.7.1.min.js"></script>
 <script src="../../build/js/bootstrap.min.js"></script>
 <script src="https://cdn.datatables.net/v/dt/dt-1.13.8/datatables.min.js"></script>
+<script src="//cdn.quilljs.com/1.3.6/quill.js"></script>
+<script src="//cdn.quilljs.com/1.3.6/quill.min.js"></script>
 <script src="../../build/js/sidebars.js"></script>
 <script src="../../build/js/main.js"></script>
 <!-- Page specific javascripts-->

@@ -8,22 +8,20 @@ $consulta = mysqli_query($db, $query);
 <div class="noticias-portada">
     <?php while ($noticia = mysqli_fetch_assoc($consulta)) : ?>
         <div class="noticia escala">
-            <picture>
-                <source srcset="build/img/ELECTRICBUFFALO2023-67.webp" type="image/webp">
-                <source srcset="build/img/ELECTRICBUFFALO2023-67.jpg" type="image/jpeg">
-                <img loading="lazy" src="build/img/ELECTRICBUFFALO2023-67.jpg" alt="ELECTRIC_BUFFALO">
-            </picture>
+
+            <img loading="lazy" src="/imagenes/<?php echo $noticia['imagen']; ?>" alt="ELECTRIC_BUFFALO">
             <div class="contenido-noticias">
                 <h3><?php echo $noticia["titulo"]; ?></h3>
                 <div class="texto-noticia">
                     <h4><?php echo $noticia["intro"]; ?></h4>
-                    <p><?php echo truncate($noticia["texto"], 100); ?></p>
+                    <p class="texto"><?php echo truncate($noticia["texto"], 150); ?></p>
                     <p class="fecha alinear-derecha"><?php echo $noticia["fecha"]; ?></p>
                 </div>
-                <a href="noticia.php" class="boton-fireBrick">Más...</a>
+                <a href="noticia.php?id=<?php echo $noticia['id']; ?>" class="boton-fireBrick">Más...</a>
 
             </div>
         </div>
     <?php endwhile; ?>
 
 </div>
+<?php mysqli_close($db); ?>

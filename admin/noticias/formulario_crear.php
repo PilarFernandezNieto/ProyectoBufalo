@@ -123,4 +123,5 @@ incluirTemplate("sidebar_menu");
 
 
 <?php
+mysqli_close($db);
 incluirTemplate("sidebar_footer");

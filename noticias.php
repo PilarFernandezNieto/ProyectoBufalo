@@ -6,7 +6,7 @@ incluirTemplate("header");
 <main class="seccion contenedor">
     <h3 class="text-center">Noticias</h3>
 
-    <?php incluirTemplate("noticias"); ?>
+    <?php require "includes/templates/noticias.php"; ?>
 
 </main>
 

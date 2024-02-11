@@ -1,7 +1,7 @@
 <?php
 require "../../includes/app.php";
 $db = conectarDB();
-incluirTemplate("admin_sidebar");
+
 
 $id = filter_var($_POST["id"], FILTER_VALIDATE_INT);
 
@@ -24,5 +24,6 @@ if ($id) {
 
 ?>
 <?php
-incluirTemplate("admin_footer");
+mysqli_close($db);
+
 ?>

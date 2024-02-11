@@ -1,7 +1,7 @@
 <?php
 require "includes/app.php";
 incluirTemplate("header");
-$db=conectarDB();
+$db = conectarDB();
 ?>
 <section class="imagen-header">
     <div class="overlay-header"></div>
@@ -23,13 +23,17 @@ $db=conectarDB();
     </div>
     <div class="contenido">
         <h2>Patrolman</h2>
+        <p>Este trabajo, el tercero de su andadura por los sinuosos senderos del rock, se eleva como una
+            plegaria y acaba constituyendo un exorcismo de todos los demonios aparecidos tras la muerte, en 2016,
+            de Alejandro “Espina” Blanco, miembro fundador de la banda y también bajista de Ilegales durante 20
+            años.</p>
+        <p>Patrolman (Boomerang Discos) es, con toda la autoridad, un disco de rock con mayúsculas. La
+            producción, a cargo del también miembro de la banda Sergio “Tutu”, no da opción a la especulación. Las
+            canciones, el arma secreta del cuarteto, suenan como una apisonadora con rodillo de seda, y esa voz,
+            quizá una de las mejores de España, se deja oír con ese timbre precioso, delicado pero no sensiblero
+            y seguro sin ser arrogante, de los que saben perfectamente qué se traen entre manos.</p>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic asperiores quos amet aliquam. Voluptas
-            soluta commodi quas voluptatum modi corrupti eius repudiandae, id velit voluptates quae asperiores non
-            fugiat sequi?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic asperiores quos amet aliquam. Voluptas
-            soluta commodi quas voluptatum.
-        </p>
+
         <article id="btn_audio">
             <div class="text-center">
                 <div class="">
@@ -63,7 +67,7 @@ $db=conectarDB();
                     <img loading="lazy" width="200" height="300" src="build/img/Instagram_logo_2022.png" alt="logo-instagram" class="instagram" />
                 </picture>
             </a>
-            <a href="" target="_blank">
+            <a href="https://open.spotify.com/intl-es/artist/4ciUFLaycqUBlM162ifmSH?si=eugYIzlWQnqkxGXJMXzYcw" target="_blank">
                 <picture>
                     <source srcset="build/img/spotifty.webp" type="image/webp" />
                     <source srcset="build/img/spotifty.png" type="image/png" />
@@ -79,9 +83,8 @@ $db=conectarDB();
 <section class="imagen-central">
     <div class="overlay-central"></div>
     <div class="contenido-central">
-        <h3>¿Quieres contactar?</h3>
-        <p>Rellena el formulario y nos pondremos en contacto contigo.</p>
-        <a href="contacto.php" class="boton-fireBrick">Contáctanos</a>
+        <h3>Conoce nuestra discografía</h3>
+        <a href="discografia.php" class="boton-fireBrick">Contáctanos</a>
     </div>
 
 
@@ -91,10 +94,10 @@ $db=conectarDB();
 <!-- NOTICIAS -->
 <section class="seccion contenedor">
     <h3 class="text-center">Noticias</h3>
-    <?php 
-        $limite = 2;
-        require "includes/templates/noticias_portada.php"; ?>
-    
+    <?php
+    $limite = 2;
+    require "includes/templates/noticias_portada.php"; ?>
+
     <div class="alinear-derecha">
         <a href="noticias.php" class="boton-fireBrick">Ver todas</a>
     </div>

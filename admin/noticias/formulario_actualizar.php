@@ -1,7 +1,7 @@
 <?php
 require "../../includes/app.php";
 $db = conectarDB();
-$id = filter_var($_GET["id"]);
+$id = filter_var($_GET["id"], FILTER_VALIDATE_INT);
 
 
 
@@ -139,4 +139,5 @@ incluirTemplate("sidebar_menu");
 
 
 <?php
+mysqli_close($db);
 incluirTemplate("sidebar_footer");
