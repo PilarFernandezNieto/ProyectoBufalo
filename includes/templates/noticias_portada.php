@@ -1,7 +1,7 @@
 <?php
 $db = conectarDB();
 
-$query = "SELECT * FROM noticias LIMIT 2";
+$query = "SELECT * FROM noticias LIMIT {$limite}";
 $consulta = mysqli_query($db, $query);
 
 ?>
@@ -17,7 +17,7 @@ $consulta = mysqli_query($db, $query);
                 <h3><?php echo $noticia["titulo"]; ?></h3>
                 <div class="texto-noticia">
                     <h4><?php echo $noticia["intro"]; ?></h4>
-                    <p><?php echo $noticia["texto"]; ?></p>
+                    <p><?php echo truncate($noticia["texto"], 100); ?></p>
                     <p class="fecha alinear-derecha"><?php echo $noticia["fecha"]; ?></p>
                 </div>
                 <a href="noticia.php" class="boton-fireBrick">Más...</a>

@@ -26,3 +26,10 @@ function estaAutenticado() {
 function fechas($fecha){
     return date("d-m-Y", strtotime($fecha));
 }
+function truncate(string $texto, int $cantidad): string {
+    if (strlen($texto) >= $cantidad) {
+        return substr($texto, 0, $cantidad) . "...";
+    } else {
+        return $texto;
+    }
+}
