@@ -90,47 +90,52 @@ incluirTemplate("sidebar_menu");
 
 
 ?>
-<section class="central contenedor seccion">
-    <h2>Actualizar Noticia</h2>
+<main class="app-content contenedor seccion formulario-admin">
     <?php foreach ($errores as $error) : ?>
-        <div class="alerta error">
-            <?php echo $error; ?>
-        </div>
+        <div class="alerta error"><?php echo $error; ?></div>
     <?php endforeach; ?>
-
-
-    <form action="" class="formulario" method="POST" enctype="multipart/form-data">
-
-        <div class="campo">
-            <label for="titulo">Título</label>
-            <input type="text" id="titulo" name="titulo" placeholder="Título de la noticia" value="<?php echo $titulo; ?>">
+    <div class="app-title">
+        <div>
+            <h1><i class="bi bi-ui-checks"></i>Actualizar Noticia</h1>
         </div>
+        <ul class="app-breadcrumb breadcrumb">
+            <li class="breadcrumb-item"><i class="bi bi-house-door"></i></li>
+            <li class="breadcrumb-item"><a href="listado_noticias.php">Noticias</a></li>
+            <li class="breadcrumb-item"><a href="formulario_actualizar.php">Actualizar Noticia</a></li>
+        </ul>
+    </div>
 
-        <div class="campo">
-            <label for="intro">Introducción</label>
-            <input type="text" id="intro" name="intro" placeholder="Intro de la noticia" value="<?php echo $intro; ?>">
+    <div class="tile seccion">
+        <div class="tile-body">
+            <form action="" class="formulario" method="POST" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="titulo" class="form-label">Título</label>
+                    <input type="text" id="titulo" name="titulo" placeholder="Título de la noticia" value="<?php echo $titulo; ?>">
+                </div>
+                <div class="mb-3">
+                    <label for="intro" class="form-label">Introducción</label>
+                    <input type="text" id="intro" name="intro" placeholder="Intro de la noticia" value="<?php echo $intro; ?>">
+                </div>
+
+
+                <div class="mb-3">
+                    <label class="form-label" for="texto">Texto</label>
+                    <textarea name="texto" id="texto" name="texto" placeholder="Texto de la noticia"><?php echo $texto; ?></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label for="imagen" class="form-label">Imagen</label>
+                    <input type="file" id="imagen" name="imagen" accept="image/jpeg, image/png">
+                </div>
+                <div class="mb-3">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha" value="<?php echo $fecha; ?>">
+                </div>
+            </form>
         </div>
+    </div>
+</main>
 
-        <div class="campo">
-            <label for="texto">Texto</label>
-            <textarea name="texto" id="texto" name="texto" placeholder="Texto de la noticia"><?php echo $texto; ?></textarea>
-
-        </div>
-
-        <div class="campo">
-            <label for="imagen">Imagen</label>
-            <input type="file" id="imagen" name="imagen" accept="image/jpeg, image/png">
-            <img src="/imagenes/<?php echo $noticia['imagen']; ?>" alt="imagen_noticia" style="width:150px" class="mt-3">
-        </div>
-        <div class="campo">
-            <label for="fecha">Fecha</label>
-            <input type="date" id="fecha" name="fecha" value="<?php echo $fecha; ?>">
-        </div>
-        <input type="submit" class="boton-fireBrick" value="Actualizar">
-
-    </form>
-
-</section>
 
 <?php
 incluirTemplate("sidebar_footer");

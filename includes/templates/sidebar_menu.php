@@ -26,7 +26,7 @@
                 <input class="app-search__input" type="search" placeholder="Buscar">
                 <button class="app-search__button"><i class="bi bi-search"></i></button>
 
-            <li class="dropdown"><a class="app-nav__item" href="#" data-bs-toggle="dropdown" aria-label="Show notifications"><i class="bi bi-bell fs-5"></i></a> -->
+            <li class="dropdown"><a class="app-nav__item" href="#" data-bs-toggle="dropdown" aria-label="Show notifications"><i class="bi bi-bell fs-5"></i></a>
                 <ul class="app-notification dropdown-menu dropdown-menu-right">
                     <li class="app-notification__title">You have 4 new notifications.</li>
                     <div class="app-notification__content">

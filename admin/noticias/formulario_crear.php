@@ -22,9 +22,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $fecha_creacion = mysqli_real_escape_string($db, date("Y-m-d"));
     $imagen = $_FILES["imagen"];
 
-
-
-
     // TODO VALIDAR UNA EXTENSIÓN MÍNIMA DE TEXTO DE LA NOTICIA
     // if(strlen($texto) < 50){
     //     $errrores[] = "Debes introducir un texto más largo";
@@ -88,7 +85,7 @@ incluirTemplate("sidebar_menu");
         </div>
         <ul class="app-breadcrumb breadcrumb">
             <li class="breadcrumb-item"><i class="bi bi-house-door"></i></li>
-            <li class="breadcrumb-item">Noticias</li>
+            <li class="breadcrumb-item"><a href="listado_noticias.php">Noticias</a></li>
             <li class="breadcrumb-item"><a href="formulario_crear.php">Nueva Noticia</a></li>
         </ul>
     </div>
@@ -119,6 +116,11 @@ incluirTemplate("sidebar_menu");
                     <label for="fecha">Fecha</label>
                     <input type="date" id="fecha" name="fecha" value="<?php echo $fecha; ?>">
                 </div>
+            </form>
+        </div>
+    </div>
+</main>
+
 
 <?php
 incluirTemplate("sidebar_footer");
