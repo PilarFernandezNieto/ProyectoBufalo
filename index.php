@@ -15,11 +15,13 @@ $db = conectarDB();
 <!-- CONTENIDO DESTACADO -->
 <section class="contenedor contenido-destacado">
     <div class="imagen cover">
-        <picture>
-            <source srcset="build/img/cover_patrolman.webp" type="image/webp" />
-            <source srcset="build/img/cover_patrolman.jpg" type="image/jpeg" />
-            <img loading="lazy" width="200" height="300" src="build/img/cover_patrolman.jpg" alt="cover_patrolman" />
-        </picture>
+        <a href="patrolman.php">
+            <picture>
+                <source srcset="build/img/cover_patrolman.webp" type="image/webp" />
+                <source srcset="build/img/cover_patrolman.jpg" type="image/jpeg" />
+                <img loading="lazy" width="200" height="300" src="build/img/cover_patrolman.jpg" alt="cover_patrolman" />
+            </picture>
+        </a>
     </div>
     <div class="contenido">
         <h2>Patrolman</h2>
@@ -94,16 +96,51 @@ $db = conectarDB();
 <!-- NOTICIAS -->
 <section class="seccion contenedor">
     <h3 class="text-center">Noticias</h3>
-    
-    <?php
-    $limite=2;
-     include "includes/templates/noticias_portada.php";?>
+
+    <div class="contenedor-noticias">
+        <div class="noticia">
+            <picture>
+                <source srcset="build/img/amas-disco.webp" type="image/webp" />
+                <img loading="lazy" width="200" height="300" src="build/img/amas-disco.jpg" alt="" />
+            </picture>
+            <div class="contenido-noticias">
+                <h3>Nominación Mejor Disco Rock</h3>
+                <h4>Premios Amas</h4>
+                <div class="texto">
+                    <p>El próximo <b>23 de febrero</b> tendrá lugar la ceremonia de entrega de los Premios Amas de la Música Asturiana, a los que la banda está nominada en la categoría de “mejor disco Rock” junto con otras grandes bandas de la escena asturiana.</p>
+                </div>
+
+                <p class="fecha alinear-derecha">11/02/2024</p>
+              
+            </div> <!-- fin contenido-noticias -->
+        </div> <!-- fin noticia -->
+
+        <div class="noticia">
+            <picture>
+                <source srcset="build/img/cartel-factoria.webp" type="image/webp" />
+                <img loading="lazy" width="200" height="300" src="build/img/cartel-factoria.jpg" alt="" />
+            </picture>
 
 
 
-    <div class="alinear-derecha">
-        <a href="noticias.php" class="boton-fireBrick">Ver todas</a>
-    </div>
+            <div class="contenido-noticias">
+                <h3>Concierto Factoría Sound Avilés</h3>
+                <h4>The Electric Buffalo en concierto</h4>
+                <div class="texto">
+                    <p>El próximo 23 de marzo, The Electric Buffalo se subirá a las tablas de la Factoría Cultural, en Avilés, lugar emblemático por donde los mejores artistas internacionales pasan a mostrar sus trabajos. La banda está encantada de que los promotores hayan querido, en este primer ciclo de conciertos del año, que Patrolman sea presentado allí.</p>
+                    <p> Si no tienes tus entradas, en este enlace puedes obtenerlas:</p>
+                    <p><a href="https://uniticket.janto.es/palaciovaldes/public/janto/main.php#">Entradas aquí</a></p>
+                </div>
+
+                <p class="fecha alinear-derecha">11/02/2024</p>
+               
+            </div> <!-- fin contenido-noticias -->
+        </div> <!-- fin noticia -->
+    </div> <!-- fin contenedor-noticias -->
+
+
+
+
 </section>
 <!-- FIN NOTICIAS -->
 

@@ -1,12 +1,21 @@
 .contenido-historia {
   @include tablet {
     @include grid(2, 2rem);
-    align-items: center;
+    @include tablet{
+      align-items: start;
+    }
+    @include desktopXL{
+      align-items: center;
+    }
+    
   }
 }
 
 .texto-historia {
   margin-top: 2rem;
+  @include tablet{
+    margin-top: 0;
+  }
   h2 {
     color: $fireBrick;
   }

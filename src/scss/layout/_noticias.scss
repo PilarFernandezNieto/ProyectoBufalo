@@ -3,9 +3,7 @@
   @include desktop {
     @include grid(2, 2rem);
   }
-  @include desktopXL {
-    @include grid(3, 2rem);
-  }
+
 }
 .escala {
   transition: transform 0.3s ease;
@@ -36,14 +34,25 @@
       margin-bottom: 2rem;
       color: $fireBrick;
       min-height: 8rem;
+      display: flex;
+      align-items: center;
     }
     h4 {
       font-size: 2rem;
+      margin-bottom: 1rem;
     }
     .texto {
       font-size: 1.6rem;
       line-height: 1.8;
-      height: 10rem;
+      min-height: 20rem;
+    }
+    a {
+      color: $negro;
+      font-size: 2rem;
+      font-weight: 600;
+      &:hover {
+        color: $fireBrick;
+      }
     }
   }
 }
