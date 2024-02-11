@@ -106,7 +106,7 @@ $(function () {
 
 
       $("#texto").summernote({
-        placeholder: "Hello stand alone ui",
+        placeholder: "Texto de la noticia",
         tabsize: 2,
         height: 120,
         toolbar: [
