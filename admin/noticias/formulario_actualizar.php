@@ -38,9 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if (!$titulo) {
         $errores[] = "Debes introducir un título";
     }
-    if (!$intro) {
-        $errores[] = "Debes introducir una intro";
-    }
+
     if (!$texto) {
         $errores[] = "Debes introducir un texto";
     }

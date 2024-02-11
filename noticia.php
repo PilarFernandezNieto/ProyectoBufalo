@@ -17,7 +17,9 @@ $noticia = mysqli_fetch_assoc($consulta);
     <img loading="lazy" src="imagenes/<?php echo $noticia['imagen']; ?>">
     <div class="noticia-interna">
         <p class="fecha"><?php echo $noticia["fecha"]; ?></p>
+    
         <div class="contenido-noticia">
+            <p><?php echo $noticia["intro"]; ?></p>
             <p><?php echo $noticia["texto"]; ?>
             </p>
         </div>

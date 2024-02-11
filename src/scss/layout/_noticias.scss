@@ -45,10 +45,6 @@
       line-height: 1.8;
       height: 10rem;
     }
-    .fecha {
-      font-style: italic;
-      color: $fireBrick;
-    }
   }
 }
 .noticias-portada {
@@ -57,4 +53,8 @@
   @include tablet {
     @include grid(2, 5rem);
   }
+}
+.fecha {
+  font-style: italic;
+  color: $fireBrick;
 }
