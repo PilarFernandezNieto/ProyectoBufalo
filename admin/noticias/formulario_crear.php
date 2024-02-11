@@ -105,7 +105,11 @@ incluirTemplate("sidebar_menu");
 
                 <div class="mb-3">
                     <label class="form-label" for="texto">Texto</label>
-                    <textarea name="texto" id="texto" name="texto" placeholder="Texto de la noticia"><?php echo $texto; ?></textarea>
+                    <!-- <textarea name="texto" id="texto" name="texto" placeholder="Texto de la noticia"><?php //echo $texto; 
+                                                                                                            ?></textarea> -->
+                    <textarea id="texto" name="texto"><?php echo $texto; ?>
+
+                    </textarea>
                 </div>
 
                 <div class="mb-3">
@@ -116,10 +120,12 @@ incluirTemplate("sidebar_menu");
                     <label for="fecha">Fecha</label>
                     <input type="date" id="fecha" name="fecha" value="<?php echo $fecha; ?>">
                 </div>
+                <input type="submit" class="boton-fireBrick" value="Crear">
             </form>
         </div>
     </div>
 </main>
+
 
 
 <?php

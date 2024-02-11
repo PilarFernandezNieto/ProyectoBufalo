@@ -9,14 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/build/css/main.css">
     <link href="https://cdn.datatables.net/v/dt/dt-1.13.8/datatables.min.css" rel="stylesheet">
-    <link href="//cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
-    <link href="//cdn.quilljs.com/1.3.6/quill.bubble.css" rel="stylesheet">
+
     <link rel="stylesheet" href="/build/css/app.css">
     <link rel="stylesheet" href="/build/css/app.css.map">
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/91eae316a2.js" crossorigin="anonymous"></script>
     <script src="/build/js/jquery-3.7.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+
+
 </head>
 
 <body class="app sidebar-mini">

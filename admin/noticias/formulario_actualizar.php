@@ -132,6 +132,7 @@ incluirTemplate("sidebar_menu");
                     <label for="fecha">Fecha</label>
                     <input type="date" id="fecha" name="fecha" value="<?php echo $fecha; ?>">
                 </div>
+                <input type="submit" class="boton-fireBrick" value="Actualizar">
             </form>
         </div>
     </div>
