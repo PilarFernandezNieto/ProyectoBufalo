@@ -46,29 +46,27 @@ incluirTemplate("sidebar_menu");
                             </thead>
                             <tbody>
                                 <?php while ($noticia = mysqli_fetch_assoc($consulta)) : ?>
-                                    <!-- <?php //debuguear($noticia, false); 
-                                            ?> -->
                                     <tr>
                                         <td><?php echo $noticia["id"]; ?></td>
                                         <td><?php echo $noticia["titulo"]; ?></td>
                                         <td><?php echo $noticia["intro"]; ?></td>
                                         <td><img src=" ../../imagenes/<?php echo $noticia['imagen']; ?>" style="width: 150px" alt="">
-                            </td>
-                            <td><?php echo fechas($noticia["fecha_creacion"]); ?></td>
-                            <td><?php echo fechas($noticia["fecha"]); ?></td>
-                            <td>
-                                <div class="acciones">
-                                    <a href="/admin/noticias/formulario_actualizar.php?id=<?php echo $noticia['id']; ?>" class="boton-verde"><i class="fa-regular fa-pen-to-square"></i></a>
-                                    <form action="borrar.php" method="POST">
-                                        <input type="hidden" value="<?php echo $noticia['id']; ?>" name="id">
-                                        <button type="submit" class="boton-rojo eliminar"><i class="fa-regular fa-trash-can"></i></button>
-                                    </form>
-                                </div>
-                            </td>
-                            </tr>
-                        <?php endwhile; ?>
+                                        </td>
+                                        <td><?php echo fechas($noticia["fecha_creacion"]); ?></td>
+                                        <td><?php echo fechas($noticia["fecha"]); ?></td>
+                                        <td>
+                                            <div class="acciones">
+                                                <a href="/admin/noticias/formulario_actualizar.php?id=<?php echo $noticia['id']; ?>" class="boton-verde"><i class="fa-regular fa-pen-to-square"></i></a>
+                                                <form action="borrar.php" method="POST">
+                                                    <input type="hidden" value="<?php echo $noticia['id']; ?>" name="id">
+                                                    <button type="submit" class="boton-rojo eliminar"><i class="fa-regular fa-trash-can"></i></button>
+                                                </form>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                <?php endwhile; ?>
 
-                        </tbody>
+                            </tbody>
                         </table>
                     </div>
                 </div>
@@ -77,6 +75,7 @@ incluirTemplate("sidebar_menu");
     </div>
     <a href="formulario_crear.php" class="boton-fireBrick">Nueva noticia</a>
 </main>
+
 
 <?php
 mysqli_close($db);
