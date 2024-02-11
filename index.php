@@ -94,9 +94,12 @@ $db = conectarDB();
 <!-- NOTICIAS -->
 <section class="seccion contenedor">
     <h3 class="text-center">Noticias</h3>
+    
     <?php
-    $limite = 2;
-    require "includes/templates/noticias_portada.php"; ?>
+    $limite=2;
+     include "includes/templates/noticias_portada.php";?>
+
+
 
     <div class="alinear-derecha">
         <a href="noticias.php" class="boton-fireBrick">Ver todas</a>
