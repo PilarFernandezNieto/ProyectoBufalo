@@ -13,7 +13,7 @@ incluirTemplate("sidebar_menu");
       <li class="breadcrumb-item"><a href="#">Administador</a></li>
     </ul>
   </div>
-  <div class="row">
+  <div class="row seccion">
     <div class="col-md-12">
       <div class="tile">
         <div class="tile-body">Configuración general de la Web</div>

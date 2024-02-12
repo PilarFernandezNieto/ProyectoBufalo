@@ -1,11 +1,12 @@
 .contenedor-noticias {
   margin: 0 auto;
   @include desktop {
-    @include grid(2, 2rem);
-  }
-  @include desktopXL {
     @include grid(3, 2rem);
+    .custom-img {
+      height: 400px;
+    }
   }
+
 }
 .escala {
   transition: transform 0.3s ease;
@@ -18,7 +19,7 @@
   border-radius: 3.75px;
   margin-bottom: 2rem;
   transition: box-shadow 0.5s ease, transform 0.3s ease;
-  @include tablet {
+  @include desktop {
     margin-bottom: 0;
   }
   &:hover {
@@ -27,8 +28,10 @@
   img {
     border-top-left-radius: 3.75px;
     border-top-right-radius: 3.75px;
-    height: 450px;
-    object-fit: fill;
+    @include desktop {
+      height: 465px;
+      object-fit: fill;
+    }
   }
   .contenido-noticias {
     padding: 2rem;
@@ -40,23 +43,34 @@
       min-height: 8rem;
     }
     h4 {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
     .texto {
       font-size: 1.6rem;
       line-height: 1.8;
       height: 10rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
     }
   }
 }
 .noticias-portada {
   width: 100%;
   margin: 0 auto;
-  @include tablet {
+  @include desktop {
     @include grid(2, 5rem);
   }
 }
 .fecha {
   font-style: italic;
   color: $fireBrick;
+}
+.contenido-noticia {
+  margin-top: 2rem;
+  min-height: 10rem;
+  .texto {
+    line-height: 1.8;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
 }

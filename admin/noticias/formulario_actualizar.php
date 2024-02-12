@@ -18,7 +18,7 @@ $error = "";
 
 $titulo = $noticia["titulo"];
 $intro = $noticia["intro"];
-$texto = $noticia["texto"];
+$texto = limpiarHTML($noticia["texto"]);
 $fecha = $noticia["fecha"];
 $fecha_creacion = $noticia["fecha_creacion"];
 $imagenNoticia = $noticia["imagen"];

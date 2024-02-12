@@ -93,7 +93,7 @@ $db = conectarDB();
 
 <!-- NOTICIAS -->
 <section class="seccion contenedor">
-    <h3 class="text-center">Noticias</h3>
+    <h2 class="text-center">Noticias</h2>
     
     <?php
     $limite=2;
