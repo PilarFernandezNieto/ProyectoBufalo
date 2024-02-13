@@ -1,27 +1,46 @@
+.contenido-filas{
+  display: grid;
+  grid-template-rows: repeat(2 1fr);
+}
 .contenido-historia {
+  display: grid;
+  .caja1 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .caja2 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
   @include tablet {
     @include grid(2, 2rem);
-    @include tablet{
-      align-items: start;
+
+    .caja1 {
+      grid-column: 1;
+      grid-row: 1;
+      margin-top: 0;
+      display: flex;
+      flex-direction: column;
+      align-content: space-between;
     }
-    @include desktopXL{
-      align-items: center;
+    .caja2 {
+      grid-column: 2;
+      grid-row: 1;
     }
-    
   }
 }
 
 .texto-historia {
   margin-top: 2rem;
-  @include tablet{
-    margin-top: 0;
-  }
+  
+
   h2 {
     color: $fireBrick;
   }
 }
 .musico {
-    p {
-        font-size: 1.6rem;
-    }
+  p {
+    font-size: 1.6rem;
+  }
 }

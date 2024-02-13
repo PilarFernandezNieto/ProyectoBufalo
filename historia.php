@@ -4,35 +4,63 @@ incluirTemplate("header");
 ?>
 <!-- FIN HEADER -->
 <main class="contenedor seccion">
-    <h1>Esta es nuestra historia</h1>
-    <div class="contenido-historia">
-        <div class="imagen">
+    <h1>15 años de Rock</h1>
+    <div class="contenido-filas">
+        <div class="imagen box1">
             <picture>
-                <source srcset="build/img/buffalos_inicios.webp" type="image/webp">
-                <source srcset="build/img/buffalos_inicios.jpg" type="image/jpeg">
-                <img loading="lazy" src="build/img/buffalos_inicios.jpg" alt="ELECTRIC_BUFFALO">
+                <source srcset="build/img/risas_baja.webp" type="image/webp">
+                <source srcset="build/img/risas_baja.jpg" type="image/jpeg">
+                <img loading="lazy" src="build/img/risas_baja.jpg" alt="risas_baja">
             </picture>
         </div>
-        <div class="texto-historia">
-            <h2>15 años de Rock &amp; Roll</h2>
-            <p>Siete años hacía que no sentíamos este temblor de la tierra moviéndose bajo las suelas de nuestras
-                botas, mientras en el
-                horizonte, una espesa nube de polvo se levanta por encima de las colinas. Los buitres vuelan en
-                círculos sobre nuestras
-                cabezas y las nubes tapan el sol. Niños pasmados miran sin entender qué está pasando; las mujeres
-                recogen cubos de agua
-                y ropa tendida y entran en sus casas sellando puertas y ventanas. Algunos hombres con la cara seca
-                como el cuero y el
-                rostro curtido se adelantan y beben un buen trago de licor. Como un trueno, a lo lejos, pueden verse
-                tres siluetas. Las
-                mismas tres siluetas de entonces. Hay un viejo sentado en un tronco con un palillo en la boca. A
-                duras penas se levanta,
-                coloca la hebilla de su cinturon, escupe y sonríe. En voz baja se le oye decir: “han vuelto a soltar
-                a la manada”.
+        <div class="texto-historia box2">
+            <p>The Electric Buffalo (Oviedo) surge, como idea, en un garito de costumbres rockeras allá por el año 2006, en
+                Oviedo. Álvaro y Wilón, fans estudiosos y entusiastas de los Gov’t Mule, acuerdan, entre vapores etílicos
+                y con el Deepest End de fondo toda la noche (cortesía de Chiri y Noe, porque en su casa, el Sweet
+                Home, sabían cuidar bien de su gente), formar una banda con una única condición: hacer exactamente
+                lo que les dé la gana sin ninguna prisa ni pretensión.</p>
+            <div>
+                <p>
+                    Ahí surgió la idea, pero faltaba la banda. El siguiente paso fue buscar un bajista y decidieron tantear a
+                    Alejandro “Espina”. Jandro, bajista de Ilegales por aquella época, era muy conocido también por haber
+                    sido profesor de bajo en el Taller de Músicos de Oviedo y por suministrar risas, comedia a paladas,
+                    cervezas y música en otro garito rockero y molón de la calle Martínez Vigil de Oviedo, La Armónica
+                    Blues Bar, que regentaba su mujer, Irene.
+                </p>
+                <p>No se hizo de rogar. Álvaro se lo planteó y Jandro dijo “sí” al momento.</p>
+            </div>
+        </div>
+    </div>
+    <div class="contenido-historia seccion">
 
-                Alejandro Espina (bajo), Álvaro Bárcena (guitarra y voz) y Wilón de Calle (batería). Formación
-                original de la banda
-                asturiana The Electric Buffalo.</p>
+        <div class="texto-historia caja1">
+            <p>A partir de ahí, fueron largas mañanas de ensayos en Agüera (La Regueras-Asturias) a unos 30 minutos
+                en coche de la capital, previo paso por Casa Edelmiro a desayunar religiosamente. Entre 2006 y 2009
+                se fue cociendo el que sería el primer álbum de la banda “Hidin’ from the Butcher” (2009), la primera y
+                única referencia de Ouroboros Records; una autoedición que tuvo a los mandos al sumo sacerdote de
+                Eclipse Estudios, el gran Dani “Desmond” Sevillano.</p>
+            <p>
+                Van pasando los años desde la salida del disco y la banda va juntándose en las pocas ocasiones que
+                Ilegales y los otros proyectos de Álvaro y Wilón les van dejando. Pero, bueno... esa era la premisa
+                básica, ¿no? No rush. Take your time. En 2016 estaba el segundo largo de la banda, “Keepin’ it warm”
+                (Boomerang Discos), calentito y a punto de salir del horno, cuando ocurrió lo absolutamente inesperado
+                y devastador.
+            </p>
+            <p>La muerte de Alejandro.</p>
+            <div class="imagen">
+                <picture>
+                    <source srcset="build/img/PROMO_3.webp" type="image/webp">
+                    <source srcset="build/img/PROMO_3.jpg" type="image/jpeg">
+                    <img loading="lazy" src="build/img/risas_baja.jpg" alt="PROMO_3">
+                </picture>
+            </div>
+        </div>
+        <div class="imagen caja2">
+            <picture>
+                <source srcset="build/img/_IGP1987.webp" type="image/webp">
+                <source srcset="build/img/_IGP1987.jpg" type="image/jpeg">
+                <img loading="lazy" src="build/img/risas_baja.jpg" alt="trio_joven">
+            </picture>
         </div>
     </div>
 </main>
