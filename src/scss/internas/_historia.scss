@@ -48,6 +48,9 @@
   margin-top: 2rem;
   max-height: 102rem;
   justify-content: space-between;
+  @include desktop{
+    margin-top: 0;
+  }
 }
 .caja-final {
   display: flex;
