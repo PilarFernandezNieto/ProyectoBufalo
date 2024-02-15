@@ -49,7 +49,7 @@ require "includes/templates/header.php";
                 <picture>
                     <source srcset="build/img/PROMO_3.webp" type="image/webp">
                     <source srcset="build/img/PROMO_3.jpg" type="image/jpeg">
-                    <img loading="lazy" src="build/img/risas_baja.jpg" alt="PROMO_3">
+                    <img loading="lazy" src="build/img/PROMO_3.jpg" alt="PROMO_3">
                 </picture>
                 <figcaption class="figure-caption text-end">Foto de Iris Benítez</figcaption>
 
@@ -59,7 +59,7 @@ require "includes/templates/header.php";
             <picture>
                 <source srcset="build/img/_IGP1987.webp" type="image/webp">
                 <source srcset="build/img/_IGP1987.jpg" type="image/jpeg">
-                <img loading="lazy" src="build/img/risas_baja.jpg" alt="trio_joven">
+                <img loading="lazy" src="build/img/_IGP1987.jpg" alt="trio_joven">
             </picture>
         </div>
     </div>
