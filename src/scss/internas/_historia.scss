@@ -4,38 +4,19 @@
 }
 .contenido-historia {
   display: grid;
-  .caja1 {
-    grid-column: 1;
-    grid-row: 2;
-  }
-  .caja2 {
-    grid-column: 1;
-    grid-row: 1;
-  }
 
   @include desktop {
     @include grid(2, 2rem);
+    align-items: end;
 
-    .caja1 {
-      grid-column: 1;
-      grid-row: 1;
-      margin-top: 0;
-      display: flex;
-      flex-direction: column;
-      align-content: space-between;
-    }
-    .caja2 {
-      grid-column: 2;
-      grid-row: 1;
-    }
-  }
+ }
 }
 
 
 .texto-historia {
-  margin-top: 2rem;
   @include desktop{
      max-height: 70rem;
+     overflow: hidden;
   }
  
 
@@ -51,9 +32,15 @@
 .texto-historia-100 {
   margin-top: 2rem;
   max-height: 102rem;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
+  overflow: hidden;
+  
   @include desktop{
     margin-top: 0;
+
   }
 }
 .caja-final {

@@ -1,6 +1,5 @@
 <?php
-require "includes/app.php";
-incluirTemplate("header");
+require "includes/templates/header.php";
 ?>
 <main class="contenedor seccion">
     <h1>Discos</h1>
@@ -16,15 +15,7 @@ incluirTemplate("header");
                 <p class="detalle-producto">
                     Vinilo
                 </p>
-                <div class="row">
-                    <p class="col-12 col-md-5">Precio: <span>20.00€</span></p>
-                    <div class="col-12 col-md-7 row detalle-cantidad">
-                        <label for="cantidad" class="col-5 col-md-7">Cantidad</label>
-                        <input type="number" min="1" class="col-7 col-md-5">
-
-                    </div>
-                </div>
-                <a href="" class="boton-fireBrick-block">Comprar</a>
+                <a href="" class="boton-fireBrick-block disabled">Disponible</a>
 
             </div>
         </div>
@@ -35,19 +26,11 @@ incluirTemplate("header");
                 <img loading="lazy" width="200" height="300" src="build/img/hiddn.jpg" alt="hiddn" />
             </picture>
             <div class="datos-producto">
-                <h3>Patrolman</h3>
+                <h3>Hidin' from the butcher</h3>
                 <p class="detalle-producto">
-                    Vinilo
+                    CD
                 </p>
-                <div class="row">
-                    <p class="col-12 col-md-5">Precio: <span>20.00€</span></p>
-                    <div class="col-12 col-md-7 row detalle-cantidad">
-                        <label for="cantidad" class="col-5 col-md-7">Cantidad</label>
-                        <input type="number" min="1" class="col-7 col-md-5">
-
-                    </div>
-                </div>
-                <a href="" class="boton-fireBrick-block">Comprar</a>
+                <a href="" class="boton-fireBrick-block disabled">Agotado</a>
 
             </div>
         </div>
@@ -58,38 +41,31 @@ incluirTemplate("header");
                 <img loading="lazy" width="200" height="300" src="build/img/keepin.jpg" alt="" />
             </picture>
             <div class="datos-producto">
-                <h3>Patrolman</h3>
+                <h3>Keepin'it Warm</h3>
                 <p class="detalle-producto">
-                    Vinilo
+                    CD
                 </p>
-                <div class="row">
-                    <p class="col-12 col-md-5">Precio: <span>20.00€</span></p>
-                    <div class="col-12 col-md-7 row detalle-cantidad">
-                        <label for="cantidad" class="col-5 col-md-7">Cantidad</label>
-                        <input type="number" min="1" class="col-7 col-md-5">
 
-                    </div>
-                </div>
-                <a href="" class="boton-fireBrick-block">Comprar</a>
+                <a href="" class="boton-fireBrick-block disabled">Agotado</a>
 
             </div>
         </div>
     </div>
 </main>
 <!-- IMAGEN CENTRAL -->
-<section class="imagen-central">
+<section class="imagen-central-tienda">
     <div class="overlay-central"></div>
     <div class="contenido-central">
-        <h3>¿Quieres contactar?</h3>
-        <p>Rellena el formulario y nos pondremos en contacto contigo.</p>
-        <a href="contacto.html" class="boton-fireBrick">Contáctanos</a>
+        <h3>Nuestra tienda está en construcción</h3>
+        <p>Si te interesa alguno de nuestros productos o quieres ponerte en contacto con nosotros, escríbenos</p>
+        <a href="mailto:info@theelectricbuffalo.com " class="boton-fireBrick">info@theelectricbuffalo.com</a>
     </div>
 
 
 </section>
 <!-- FIN IMAGEN CENTRAL -->
 <section class="contenedor seccion">
-    <h1>Camis</h1>
+    <h1>Camisetas</h1>
     <div class="contenedor-productos">
         <div class="producto">
             <picture>
@@ -98,19 +74,15 @@ incluirTemplate("header");
                 <img loading="lazy" width="200" height="300" src="build/img/beisbolera_logo buffalo_negra.jpg" alt="" />
             </picture>
             <div class="datos-producto">
-                <h3>Patrolman</h3>
+                <h3>Modelo beisbolera</h3>
                 <p class="detalle-producto">
-                    Vinilo
+                    Tallas disponbiles
                 </p>
                 <div class="row">
-                    <p class="col-12 col-md-5">Precio: <span>20.00€</span></p>
-                    <div class="col-12 col-md-7 row detalle-cantidad">
-                        <label for="cantidad" class="col-5 col-md-7">Cantidad</label>
-                        <input type="number" min="1" class="col-7 col-md-5">
+                    <p class="col"><span>12.00€ (+gastos de envío)</span></p>
 
-                    </div>
                 </div>
-                <a href="" class="boton-fireBrick-block">Comprar</a>
+                <a href="" class="boton-fireBrick-block disabled">Disponible</a>
 
             </div>
         </div>
@@ -121,19 +93,15 @@ incluirTemplate("header");
                 <img loading="lazy" width="200" height="300" src="build/img/logo buffalo_negra.jpg" alt="" />
             </picture>
             <div class="datos-producto">
-                <h3>Patrolman</h3>
+                <h3>Fondo negro</h3>
                 <p class="detalle-producto">
-                    Vinilo
+                    Tallas disponibles
                 </p>
                 <div class="row">
-                    <p class="col-12 col-md-5">Precio: <span>20.00€</span></p>
-                    <div class="col-12 col-md-7 row detalle-cantidad">
-                        <label for="cantidad" class="col-5 col-md-7">Cantidad</label>
-                        <input type="number" min="1" class="col-7 col-md-5">
+                    <p class="col"><span>12.00€ (+gastos de envío)</span></p>
 
-                    </div>
                 </div>
-                <a href="" class="boton-fireBrick-block">Comprar</a>
+                <a href="" class="boton-fireBrick-block disabled">Disponible</a>
 
             </div>
         </div>
@@ -144,19 +112,14 @@ incluirTemplate("header");
                 <img loading="lazy" width="200" height="300" src="build/img/logo buffalo_roja.jpg" alt="" />
             </picture>
             <div class="datos-producto">
-                <h3>Patrolman</h3>
+                <h3>Fondo rojo</h3>
                 <p class="detalle-producto">
-                    Vinilo
+                    Tallas disponibles
                 </p>
                 <div class="row">
-                    <p class="col-12 col-md-5">Precio: <span>20.00€</span></p>
-                    <div class="col-12 col-md-7 row detalle-cantidad">
-                        <label for="cantidad" class="col-5 col-md-7">Cantidad</label>
-                        <input type="number" min="1" class="col-7 col-md-5">
-
-                    </div>
+                    <p class="col"><span>12.00€ (+gastos de envío)</span></p>
                 </div>
-                <a href="" class="boton-fireBrick-block">Comprar</a>
+                <a class="boton-fireBrick-block disabled">Disponible</a>
 
             </div>
         </div>
@@ -166,5 +129,5 @@ incluirTemplate("header");
 
 
 <?php
-include "./includes/templates/footer.php";
+include "includes/templates/footer.php";
 ?>

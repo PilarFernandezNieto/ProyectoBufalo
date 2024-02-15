@@ -1,33 +1,33 @@
 <?php
-require "includes/app.php";
-incluirTemplate("header");
+require "includes/templates/header.php";
 ?>
 
 <main class="contenedor seccion">
     <h1>Patrolman</h1>
-    <div class="contenido-historia seccion">
-        <div class="texto-historia">
+    <div class="contenido-ficha-disco seccion5">
+        <div class="texto-disco">
             <p>Año de edición: 2023</p>
+            <p>Formato: Vinilo</p>
             <p>Personal:</p>
             <ul>
-                <li>Álvaro “Daddy” Bárcena: guitarra acústica y eléctrica, pedal steel y voz</li>
-                <li>Sergio “Tutu” Rodríguez: bajo / ingeniero de sonido</li>
-                <li>“Stone” Sam Rodríguez: teclados, hammond y wurlitzer</li>
-                <li>Wilón DeCalle: batería y percusión</li>
-                <li>Sil Fernández: coros</li>
-                <li>Juan Yagüe: guitarra acústica y bouzouki</li>
-                <li>Cristina Gestido: viola</li>
+                <li><b>Álvaro “Daddy” Bárcena</b>: guitarra acústica y eléctrica, pedal steel y voz</li>
+                <li><b>Sergio “Tutu” Rodríguez</b>: bajo / ingeniero de sonido</li>
+                <li><b>“Stone” Sam Rodríguez</b>: teclados, hammond y wurlitzer</li>
+                <li><b>Wilón DeCalle</b>: batería y percusión</li>
+                <li><b>Sil Fernández</b>: coros</li>
+                <li><b>Juan Yagüe</b>: guitarra acústica y bouzouki</li>
+                <li><b>Cristina Gestido</b>: viola</li>
             </ul>
 
-            <p>Fotos: Wesley, Manfred, Dena Flows y Eloy Beltené</p>
-            <p>Artwork y diseño carpeta: Ossobüko Studio</p>
+            <p>Fotos:<b> Wesley, Manfred, Dena Flows y Eloy Beltené</b></p>
+            <p>Artwork y diseño carpeta: <b>Ossobüko Studio</b></p>
             <p>Todas las canciones compuestas por The Electric Buffalo.</p>
             <p>Grabado y mezclado en Tutu Estudios (Corvera) y masterizado por Dani “Desmond” Sevillano entre
                 septiembre y octubre de 2022.</p>
             <p>Producido por Sergio “Tutu” Rodríguez</p>
 
         </div>
-        <div class="imagen">
+        <div class="">
             <picture>
                 <source srcset="build/img/cover_patrolman.webp" type="image/webp" />
                 <source srcset="build/img/cover_patrolman.jpg" type="image/jpeg" />
@@ -36,15 +36,16 @@ incluirTemplate("header");
 
         </div>
     </div>
-    <div class="contenido-historia seccion">
-        <div class="imagen">
+    <div class="contenido-ficha-disco seccion5">
+        <div class="item2">
             <picture>
                 <source srcset="build/img/buffalos_inicios.webp" type="image/webp">
                 <source srcset="build/img/buffalos_inicios.jpg" type="image/jpeg">
                 <img loading="lazy" src="build/img/buffalos_inicios.jpg" alt="ELECTRIC_BUFFALO">
             </picture>
         </div>
-        <div class="texto-historia">
+
+        <div class="texto-disco item1">
             <p>
                 Este trabajo, el tercero de su andadura por los sinuosos senderos del rock, se eleva como una plegaria y acaba constituyendo un exorcismo de todos los demonios aparecidos tras la muerte, en 2016, de Alejandro “Espina” Blanco, miembro fundador de la banda y también bajista de Ilegales durante 20 años.
             </p>
@@ -75,12 +76,14 @@ incluirTemplate("header");
                 que al añorado Alejandro.
             </p>
             <blockquote class="alinear-derecha">-Igor Paskual-</blockquote>
+
         </div>
+
     </div>
 
 
 </main>
 
 <?php
-incluirTemplate("footer");
+include "includes/templates/footer.php";
 ?>

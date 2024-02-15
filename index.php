@@ -1,16 +1,8 @@
 <?php
-require "includes/app.php";
-incluirTemplate("header");
-$db = conectarDB();
+require "includes/templates/header.php";
 ?>
 <section class="imagen-header">
     <div class="overlay-header"></div>
-    <div class="contenedor contenido-imagen">
-        <h2>The Electric Buffalo</h2>
-        <p>Patrolman</p>
-    </div>
-
-
 </section>
 <!-- CONTENIDO DESTACADO -->
 <section class="contenedor contenido-destacado">
@@ -85,8 +77,8 @@ $db = conectarDB();
 <section class="imagen-central">
     <div class="overlay-central"></div>
     <div class="contenido-central">
-        <h3>Conoce nuestra discografía</h3>
-        <a href="discografia.php" class="boton-fireBrick">Contáctanos</a>
+        <h3>Este es nuestro trabajo</h3>
+        <a href="discografia.php" class="boton-fireBrick">Discografía</a>
     </div>
 
 
@@ -107,7 +99,7 @@ $db = conectarDB();
                 <h3>Nominación Mejor Disco Rock</h3>
                 <h4>Premios Amas</h4>
                 <div class="texto">
-                    <p>El próximo <b>23 de febrero</b> tendrá lugar la ceremonia de entrega de los Premios Amas de la Música Asturiana, a los que la banda está nominada en la categoría de “mejor disco Rock” junto con otras grandes bandas de la escena asturiana.</p>
+                    <p>El próximo <b>23 de febrero</b> tendrá lugar la ceremonia de entrega de los Premios Amas de la Música Asturiana, a los que la banda está nominada en la categoría de “mejor disco Rock”.</p>
                 </div>
 
                 <p class="fecha alinear-derecha">11/02/2024</p>
@@ -145,5 +137,5 @@ $db = conectarDB();
 <!-- FIN NOTICIAS -->
 
 <?php
-incluirTemplate("footer");
+include "includes/templates/footer.php";
 ?>

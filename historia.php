@@ -1,19 +1,18 @@
 <?php
-require "includes/app.php";
-incluirTemplate("header");
+require "includes/templates/header.php";
 ?>
 <!-- FIN HEADER -->
 <main class="contenedor seccion">
     <h1>15 años de Rock</h1>
     <div class="contenido-filas">
-        <div class="imagen box1">
+        <div class="imagen caja1">
             <picture>
                 <source srcset="build/img/risas_baja.webp" type="image/webp">
                 <source srcset="build/img/risas_baja.jpg" type="image/jpeg">
                 <img loading="lazy" src="build/img/risas_baja.jpg" alt="risas_baja">
             </picture>
         </div>
-        <div class="texto-historia box2">
+        <div class="texto-historia caja2 mt-3">
             <p><b>The Electric Buffalo</b> (Oviedo) surge, como idea, en un garito de costumbres rockeras allá por el año 2006, en
                 Oviedo. Álvaro y Wilón, fans estudiosos y entusiastas de los <b>Gov’t Mule</b>, acuerdan, entre vapores etílicos
                 y con el Deepest End de fondo toda la noche (cortesía de Chiri y Noe, porque en su casa, el <b>Sweet Home</b>, sabían cuidar bien de su gente), formar una banda con una única condición: hacer exactamente lo que les dé la gana sin ninguna prisa ni pretensión.</p>
@@ -28,85 +27,86 @@ incluirTemplate("header");
             </div>
         </div>
     </div>
-    <div class="rejilla">
 
-        <div class="contenido-historia seccion rejilla1">
-            <div class="texto-historia caja1">
-                <p>A partir de ahí, fueron largas mañanas de ensayos en Agüera (La Regueras-Asturias) a unos 30 minutos
-                    en coche de la capital, previo paso por Casa Edelmiro a desayunar religiosamente. Entre 2006 y 2009
-                    se fue cociendo el que sería el primer álbum de la banda <b>“Hidin’ from the Butcher” (2009)</b>, la primera y
-                    única referencia de <b>Ouroboros Records</b>; una autoedición que tuvo a los mandos al sumo sacerdote de
-                    <b>Eclipse Estudios</b>, el gran <b>Dani “Desmond” Sevillano</b>.
-                </p>
-                <p>
-                    Van pasando los años desde la salida del disco y la banda va juntándose en las pocas ocasiones que
-                    Ilegales y los otros proyectos de Álvaro y Wilón les van dejando. Pero, bueno... esa era la premisa
-                    básica, ¿no? No rush. Take your time. En 2016 estaba el segundo largo de la banda, <b>“Keepin’ it warm” (Boomerang Discos)</b>,
-                    calentito y a punto de salir del horno, cuando ocurrió lo absolutamente inesperado
-                    y devastador.
-                </p>
-                <p>La muerte de Alejandro.</p>
-                <div class="imagen">
-                    <picture>
-                        <source srcset="build/img/wilonI.webp" type="image/webp">
-                        <source srcset="build/img/wilonI.jpg" type="image/jpeg">
-                        <img loading="lazy" src="build/img/wilonI.jpg" alt="wilonI">
-                    </picture>
-                    <figcaption class="figure-caption text-end">Foto de Iris Benítez</figcaption>
-                </div>
-            </div>
-            <div class="imagen caja2">
+
+    <div class="contenido-historia seccion rejilla1">
+        <div class="texto-historia caja3">
+            <p>A partir de ahí, fueron largas mañanas de ensayos en Agüera (La Regueras-Asturias) a unos 30 minutos
+                en coche de la capital, previo paso por Casa Edelmiro a desayunar religiosamente. Entre 2006 y 2009
+                se fue cociendo el que sería el primer álbum de la banda <b>“Hidin’ from the Butcher” (2009)</b>, la primera y
+                única referencia de <b>Ouroboros Records</b>; una autoedición que tuvo a los mandos al sumo sacerdote de
+                <b>Eclipse Estudios</b>, el gran <b>Dani “Desmond” Sevillano</b>.
+            </p>
+            <p>
+                Van pasando los años desde la salida del disco y la banda va juntándose en las pocas ocasiones que
+                Ilegales y los otros proyectos de Álvaro y Wilón les van dejando. Pero, bueno... esa era la premisa
+                básica, ¿no? No rush. Take your time. En 2016 estaba el segundo largo de la banda, <b>“Keepin’ it warm” (Boomerang Discos)</b>,
+                calentito y a punto de salir del horno, cuando ocurrió lo absolutamente inesperado
+                y devastador.
+            </p>
+            <p>La muerte de Alejandro.</p>
+            <div class="imagen">
                 <picture>
-                    <source srcset="build/img/_IGP1987.webp" type="image/webp">
-                    <source srcset="build/img/_IGP1987.jpg" type="image/jpeg">
-                    <img loading="lazy" src="build/img/risas_baja.jpg" alt="trio_joven">
+                    <source srcset="build/img/PROMO_3.webp" type="image/webp">
+                    <source srcset="build/img/PROMO_3.jpg" type="image/jpeg">
+                    <img loading="lazy" src="build/img/risas_baja.jpg" alt="PROMO_3">
                 </picture>
+                <figcaption class="figure-caption text-end">Foto de Iris Benítez</figcaption>
+
             </div>
         </div>
-        <div class="contenido-historia seccion rejilla2 ">
-
-            <div class="texto-historia-100 caja-final">
-                <div>
-                    <p>Jandro “Espina”, un ser de luz y amor, se iba a los 45. Dejaba una mujer y una hija desoladas y una
-                        innumerable cantidad de amigos con el corazón hecho pedazos.</p>
-                    <p>
-                        El disco se presentó en Oviedo con un elenco irrepetible de compañeros, currantes de las cuatro
-                        cuerdas, con predisposición total a echar un cable. Fueron días de muchos ensayos con muchos
-                        amigos, con caras muy largas, pero con muchas ganas de hacer un show irrepetible. Y después de todo
-                        esto, con tanta emoción desbordada, comenzó un pequeño exilio en el desierto con un futuro algo
-                        incierto.
-                    </p>
-                    <p>
-                        El exilio espiritual tocó a su fin algunas semanas después, con la decisión de seguir adelante y con la
-                        llamada a filas de Sergio “Tutu” Rodríguez, bajista de Los Deltonos, fanático de Miles Davis y amo de
-                        llaves de “Tutu Estudios” en Corvera, Asturias.
-                    </p>
-                    <p>Junto con el fabuloso teclista “Stone” Sam Rodríguez, que se une a la banda unos meses después,
-                        empieza el nuevo periplo del Búfalo Eléctrico que desemboca en la salida de su tercer trabajo
-                        discográfico dedicado, como no podía ser de otra manera, a la memoria de Alejandro. “Patrolman”
-                        (Boomerang Discos, 2023), bajo la producción de Sergio “Tutu”, es la culminación de un camino andado
-                        sin más pretensión que hacer la música y las canciones que les apetece, sin prisa, exactamente como
-                        empezó todo allá por aquel año 2006.</p>
-                </div>
-                <div class="imagen">
-                    <picture>
-                        <source srcset="build/img/PROMO_3.webp" type="image/webp">
-                        <source srcset="build/img/PROMO_3.jpg" type="image/jpeg">
-                        <img loading="lazy" src="build/img/risas_baja.jpg" alt="PROMO_3">
-                    </picture>
-                    <figcaption class="figure-caption text-end">Foto de Iris Benítez</figcaption>
-                </div>
-
-            </div>
-            <div>
-                <picture>
-                    <source srcset="build/img/front_fondo_movil.webp" type="image/webp">
-                    <source srcset="build/img/front_fondo_movil.jpg" type="image/jpeg">
-                    <img loading="lazy" src="build/img/front_fondo_movil.jpg" alt="front_fondo_movil" class=" img-fluid">
-                </picture>
-            </div>
+        <div class="imagen caja4">
+            <picture>
+                <source srcset="build/img/_IGP1987.webp" type="image/webp">
+                <source srcset="build/img/_IGP1987.jpg" type="image/jpeg">
+                <img loading="lazy" src="build/img/risas_baja.jpg" alt="trio_joven">
+            </picture>
         </div>
     </div>
+    <div class="contenido-historia seccion rejilla2 ">
+
+        <div class="texto-historia-100 caja5">
+            <div>
+                <p>Jandro “Espina”, un ser de luz y amor, se iba a los 45. Dejaba una mujer y una hija desoladas y una
+                    innumerable cantidad de amigos con el corazón hecho pedazos.</p>
+                <p>
+                    El disco se presentó en Oviedo con un elenco irrepetible de compañeros, currantes de las cuatro
+                    cuerdas, con predisposición total a echar un cable. Fueron días de muchos ensayos con muchos
+                    amigos, con caras muy largas, pero con muchas ganas de hacer un show irrepetible. Y después de todo
+                    esto, con tanta emoción desbordada, comenzó un pequeño exilio en el desierto con un futuro algo
+                    incierto.
+                </p>
+                <p>
+                    El exilio espiritual tocó a su fin algunas semanas después, con la decisión de seguir adelante y con la
+                    llamada a filas de Sergio “Tutu” Rodríguez, bajista de Los Deltonos, fanático de Miles Davis y amo de
+                    llaves de “Tutu Estudios” en Corvera, Asturias.
+                </p>
+                <p>Junto con el fabuloso teclista “Stone” Sam Rodríguez, que se une a la banda unos meses después,
+                    empieza el nuevo periplo del Búfalo Eléctrico que desemboca en la salida de su tercer trabajo
+                    discográfico dedicado, como no podía ser de otra manera, a la memoria de Alejandro. “Patrolman”
+                    (Boomerang Discos, 2023), bajo la producción de Sergio “Tutu”, es la culminación de un camino andado
+                    sin más pretensión que hacer la música y las canciones que les apetece, sin prisa, exactamente como
+                    empezó todo allá por aquel año 2006.</p>
+            </div>
+            <div class="imagen">
+                <picture>
+                    <source srcset="build/img/wilonI.webp" type="image/webp">
+                    <source srcset="build/img/wilonI.jpg" type="image/jpeg">
+                    <img loading="lazy" src="build/img/wilonI.jpg" alt="wilonI">
+                </picture>
+                <figcaption class="figure-caption text-end">Foto de Iris Benítez</figcaption>
+            </div>
+
+        </div>
+        <div class="caja6">
+            <picture>
+                <source srcset="build/img/front_fondo_movil.webp" type="image/webp">
+                <source srcset="build/img/front_fondo_movil.jpg" type="image/jpeg">
+                <img loading="lazy" src="build/img/front_fondo_movil.jpg" alt="front_fondo_movil" class=" img-fluid">
+            </picture>
+        </div>
+    </div>
+
 
 </main>
 
@@ -157,7 +157,7 @@ incluirTemplate("header");
             <div class="collapse" id="WdeCalle">
                 <div class="card card-body my-3">
                     <p class="lh-base"><b>Wilón DeCalle</b> (Oviedo, 25 de septiembre de 1976) fue el encargado de producir el groove en bandas
-                        como <b>Los Bruscos</b> o <b>The Real McCoyson</b> y actualmente lo es en <b>Deville & La Fuerza</b> o <b>Montefurado</b>, además del<b> Búfalo Eléctrico</b>. Ha grabado con multitud de artistas y bandas asturianas. No entiende una palabra de economía (algo que quiere remediar) y siente profunda admiración por
+                        como <b>Los Bruscos</b> o <b>The Real McCoyson</b> y actualmente lo es en <b>Deville & La Fuerza</b>, <b>Montefurado</b> o <b>Gestido</b>, además del<b> Búfalo Eléctrico</b>. Ha grabado con multitud de artistas y bandas asturianas. No entiende una palabra de economía (algo que quiere remediar) y siente profunda admiración por
                         Bobby Caldwell, Matt Abts y Jaime Beláustegui.</p>
                 </div>
             </div>
