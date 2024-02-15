@@ -31,9 +31,13 @@
   }
 }
 
+
 .texto-historia {
   margin-top: 2rem;
-  max-height: 70rem;
+  @include desktop{
+     max-height: 70rem;
+  }
+ 
 
   h2 {
     color: $fireBrick;
