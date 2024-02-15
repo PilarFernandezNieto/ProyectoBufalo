@@ -7,7 +7,7 @@ $consulta = mysqli_query($db, $query);
 ?>
 <div class="noticias-portada">
     <?php while ($noticia = mysqli_fetch_assoc($consulta)) : ?>
-        <div class="noticia escala">
+        <div class="noticia">
 
             <img loading="lazy" src="/imagenes/<?php echo $noticia['imagen']; ?>" alt="ELECTRIC_BUFFALO">
             <div class="contenido-noticias">
