@@ -12,4 +12,28 @@
         color: $blanco;
         font-size: 1.2rem;
     }
+    .navegacion-principal {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+.datos-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    a {
+        color: $letras;
+        font-size: 2rem;
+        @include tablet{
+            font-size: 3rem;
+        }
+    
+        &:hover {
+            color: $fireBrick;
+        }
+    }
+
 }
