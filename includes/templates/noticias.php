@@ -26,3 +26,5 @@ $consulta = mysqli_query($db, $query);
         </div>
     <?php endwhile; ?>
 </div> <!-- fin contenedor-noticias -->
+
+<?php mysqli_close($db); ?>

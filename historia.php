@@ -1,5 +1,6 @@
 <?php
-require "includes/templates/header.php";
+require "includes/app.php";
+incluirTemplate("header");
 ?>
 <!-- FIN HEADER -->
 <main class="contenedor seccion">
@@ -187,5 +188,5 @@ require "includes/templates/header.php";
 
 
 <?php
-include "./includes/templates/footer.php";
+incluirTemplate("footer");
 ?>

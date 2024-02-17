@@ -9,7 +9,7 @@
     <link rel="icon" type="image/x-icon" href="/build/img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <script src="https://kit.fontawesome.com/91eae316a2.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
 
@@ -18,8 +18,6 @@
     <link rel="stylesheet" href="/build/css/app.css">
     <link rel="stylesheet" href="/build/css/app.css.map">
     <script src="/build/js/jquery-3.7.1.min.js"></script>
-
-    <script src="https://kit.fontawesome.com/91eae316a2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -48,6 +46,7 @@
                     <a href="tienda.php">Tienda</a>
                     <a href="contacto.php">Contacto</a>
                     <a href="/admin/index.php">Admin</a>
+                    <a href="login.php">Iniciar sesión</a>
                 </nav>
             </div>
 

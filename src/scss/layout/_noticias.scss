@@ -25,7 +25,10 @@
   img {
     border-top-left-radius: 3.75px;
     border-top-right-radius: 3.75px;
+
   }
+
+}
   .contenido-noticias {
     padding: 2rem;
     border: 1px solid $letras;
@@ -45,17 +48,10 @@
       font-size: 1.6rem;
       line-height: 1.8;
       min-height: 20rem;
+  
     }
-    a {
-      color: $negro;
-      font-size: 2rem;
-      font-weight: 600;
-      &:hover {
-        color: $fireBrick;
-      }
-    }
+ 
   }
-}
 .noticias-portada {
   width: 100%;
   margin: 0 auto;
@@ -66,4 +62,12 @@
 .fecha {
   font-style: italic;
   color: $fireBrick;
+}
+.enlace-negro {
+  color: $negro;
+  font-size: 2rem;
+  text-decoration: underline;
+  &:hover {
+    color: $fireBrick;
+  }
 }

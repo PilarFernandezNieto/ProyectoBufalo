@@ -103,10 +103,7 @@ incluirTemplate("sidebar_menu");
 
                 <div class="mb-3">
                     <label class="form-label" for="texto">Texto</label>
-                    <!-- <textarea name="texto" id="texto" name="texto" placeholder="Texto de la noticia"><?php //echo $texto; 
-                                                                                                            ?></textarea> -->
                     <textarea id="texto" name="texto"><?php echo $texto; ?>
-
                     </textarea>
                 </div>
 

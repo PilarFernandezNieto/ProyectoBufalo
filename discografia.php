@@ -1,5 +1,7 @@
 <?php
-require "includes/templates/header.php";
+require "includes/app.php";
+$db = conectarDB();
+incluirTemplate("header");
 ?>
 <main class="contenedor seccion">
     <h1>Discografía</h1>
@@ -99,5 +101,5 @@ require "includes/templates/header.php";
 
 
 <?php
-include "includes/templates/footer.php";
+incluirTemplate("footer");
 ?>

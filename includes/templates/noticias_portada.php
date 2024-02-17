@@ -9,7 +9,7 @@ $consulta = mysqli_query($db, $query);
     <?php while ($noticia = mysqli_fetch_assoc($consulta)) : ?>
         <div class="noticia">
 
-            <img loading="lazy" src="/imagenes/<?php echo $noticia['imagen']; ?>" alt="ELECTRIC_BUFFALO">
+            <img loading="lazy" src="/imagenes/<?php echo $noticia['imagen']; ?>" alt="ELECTRIC_BUFFALO" class="img-fluid">
             <div class="contenido-noticias">
                 <h3><?php echo $noticia["titulo"]; ?></h3>
                 <div class="texto-noticia">
