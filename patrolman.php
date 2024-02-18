@@ -41,7 +41,7 @@ require "includes/templates/header.php";
             <picture>
                 <source srcset="build/img/buffalos_inicios.webp" type="image/webp">
                 <source srcset="build/img/buffalos_inicios.jpg" type="image/jpeg">
-                <img loading="lazy" src="build/img/buffalos_inicios.jpg" alt="ELECTRIC_BUFFALO">
+                <img loading="lazy" src="build/img/buffalos_inicios.jpg" alt="buffalos inicio">
             </picture>
         </div>
 

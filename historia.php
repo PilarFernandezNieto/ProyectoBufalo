@@ -4,7 +4,7 @@ require "includes/templates/header.php";
 <!-- FIN HEADER -->
 <main class="contenedor seccion">
     <h1>15 años de Rock</h1>
-    <div class="contenido-filas">
+    <div>
         <div class="imagen caja1">
             <picture>
                 <source srcset="build/img/risas_baja.webp" type="image/webp">
@@ -94,7 +94,7 @@ require "includes/templates/header.php";
                     <source srcset="build/img/wilonI.jpg" type="image/jpeg">
                     <img loading="lazy" src="build/img/wilonI.jpg" alt="wilonI">
                 </picture>
-                <figcaption class="figure-caption text-end">Foto de Iris Benítez</figcaption>
+                <span class="caption text-end">Foto de Iris Benítez</span>
             </div>
 
         </div>
@@ -116,7 +116,7 @@ require "includes/templates/header.php";
         <div class="col-12 col-md-6 p-0 musico">
             <a class="btn" data-bs-toggle="collapse" href="#ABarcena" role="button" aria-expanded="false" aria-controls="ABarcena">
                 <figure class="figure">
-                    <img src="build/img/alvaroI_bajares.jpg" class="figure-img img-fluid rounded" alt="Álvaro_Barcena">
+                    <img src="build/img/alvaroI_bajares.jpg" class="figure-img img-fluid rounded" alt="Alvaro_Barcena">
                     <figcaption class="figure-caption text-end">Foto de Paco Vigil</figcaption>
                 </figure>
             </a>
@@ -151,7 +151,7 @@ require "includes/templates/header.php";
             <a class="btn" data-bs-toggle="collapse" href="#WdeCalle" role="button" aria-expanded="false" aria-controls="WdeCalle">
                 <figure class="figure">
                     <img src="build/img/willyJam_bajares.jpg" class="figure-img img-fluid rounded" alt="WilonDeCalle">
-                    <figcaption class="figure-caption text-end">Foto de Wesley</figcaption>
+                    <span class="figure-caption text-end">Foto de Wesley</span>
                 </figure>
             </a>
             <div class="collapse" id="WdeCalle">
@@ -165,7 +165,7 @@ require "includes/templates/header.php";
         <div class="col-12 col-md-6 p-0 musico">
             <a class="btn" data-bs-toggle="collapse" href="#SRodriguez" role="button" aria-expanded="false" aria-controls="SRodriguez">
                 <figure class="figure">
-                    <img src="build/img/samII.JPG" class="figure-img img-fluid rounded" alt="Sam_Rodríguez">
+                    <img src="build/img/samII.JPG" class="figure-img img-fluid rounded" alt="Sam_Rodriguez">
                     <figcaption class="figure-caption text-end">Foto de Paco Vigil</figcaption>
                 </figure>
             </a>

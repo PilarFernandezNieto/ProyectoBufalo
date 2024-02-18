@@ -5,7 +5,7 @@
         <a href="discografia.php">Discografía</a>
         <a href="tienda.php">Tienda</a>
     </nav>
-    <section class="datos-footer">
+    <div class="datos-footer">
         <div class="redes-sociales">
             <a href="https://www.youtube.com/@theelectricbuffalo666" class="youtube" target="_blank">
                 <i class="fa-brands fa-youtube"></i>
@@ -18,10 +18,10 @@
             </a>
         </div>
         <div class="contacto ">
-            <a href="mailto:theelectricbuffalo.com" target="_black">info@theelectricbuffalo.com</a>
+            <a href="mailto:theelectricbuffalo.com" target="_blank">info@theelectricbuffalo.com</a>
         </div>
 
-    </section>
+    </div>
     <p>The Electric Buffalo. Todos los derechos reservados</p>
 
 

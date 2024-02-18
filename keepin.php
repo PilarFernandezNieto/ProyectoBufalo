@@ -7,7 +7,7 @@ require "includes/templates/header.php";
     <div class="contenido-ficha-disco seccion5">
         <div class="texto-disco">
             <p>Año de edición: 2016</p>
-            <p>Foramto: CD</p>
+            <p>Formato: CD</p>
             <p>Personal:</p>
             <ul>
                 <li><b>Álvaro “Daddy” Bárcena</b>: guitarra acústica, eléctrica y 12-cuerdas, pedal steel y voz</li>

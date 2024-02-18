@@ -1,9 +1,9 @@
 <?php
 require "includes/templates/header.php";
 ?>
-<section class="imagen-header">
+<div class="imagen-header">
     <div class="overlay-header"></div>
-</section>
+</div>
 <!-- CONTENIDO DESTACADO -->
 <section class="contenedor contenido-destacado">
     <div class="imagen cover">
@@ -39,7 +39,7 @@ require "includes/templates/header.php";
                     </p>
                     <div class="collapse" id="collapseExample">
                         <!-- la propiedad controlslist me produce un error en el validador de html pero es la única manera que encontré de desactivar las descargas -->
-                        <audio controls class="audiostyle" controlslist="nodownload">
+                        <audio controls class="audiostyle">
                             <source src="build/multimedia/A2-Patrolman.mp3" type="audio/mp3" />
                         </audio>
                     </div>
@@ -93,7 +93,7 @@ require "includes/templates/header.php";
         <div class="noticia">
             <picture>
                 <source srcset="build/img/amas-disco.webp" type="image/webp" />
-                <img loading="lazy" width="200" height="300" src="build/img/amas-disco.jpg" alt="" />
+                <img loading="lazy" width="200" height="300" src="build/img/amas-disco.jpg" alt="promo amas" />
             </picture>
             <div class="contenido-noticias">
                 <h3>Nominación Mejor Disco Rock</h3>
@@ -110,7 +110,7 @@ require "includes/templates/header.php";
         <div class="noticia">
             <picture>
                 <source srcset="build/img/cartel-factoria.webp" type="image/webp" />
-                <img loading="lazy" width="200" height="300" src="build/img/cartel-factoria.jpg" alt="" />
+                <img loading="lazy" width="200" height="300" src="build/img/cartel-factoria.jpg" alt="promo factoria" />
             </picture>
 
 
@@ -119,9 +119,9 @@ require "includes/templates/header.php";
                 <h3>Concierto Factoría Sound Avilés</h3>
                 <h4>The Electric Buffalo en concierto</h4>
                 <div class="texto">
-                    <p>El próximo 23 de marzo, The Electric Buffalo se subirá a las tablas de la Factoría Cultural, en Avilés, lugar emblemático por donde los mejores artistas internacionales pasan a mostrar sus trabajos. La banda está encantada de que los promotores hayan querido, en este primer ciclo de conciertos del año, que Patrolman sea presentado allí.</p>
+                    <p>El próximo <b>23 de marzo</b>, The Electric Buffalo se subirá a las tablas de la <b>Factoría Cultural, en Avilés</b>, lugar emblemático por donde los mejores artistas internacionales pasan a mostrar sus trabajos. La banda está encantada de que los promotores hayan querido, en este primer ciclo de conciertos del año, que <b>Patrolman</b> sea presentado allí.</p>
                     <p> Si no tienes tus entradas, en este enlace puedes obtenerlas:</p>
-                    <p><a href="https://uniticket.janto.es/palaciovaldes/public/janto/main.php#">Entradas aquí</a></p>
+                    <p><a href="https://uniticket.janto.es/palaciovaldes/public/janto/main.php#">Compra aquí tus entradas</a></p>
                 </div>
 
                 <p class="fecha alinear-derecha">11/02/2024</p>

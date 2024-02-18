@@ -8,7 +8,7 @@ require "includes/templates/header.php";
             <picture>
                 <source srcset="build/img/cover_patrolman.webp" type="image/webp" />
                 <source srcset="build/img/cover_patrolman.jpg" type="image/jpeg" />
-                <img loading="lazy" width="200" height="300" src="build/img/cover_patrolman.webp.jpg" alt="" />
+                <img loading="lazy" width="200" height="300" src="build/img/cover_patrolman.webp.jpg" alt="cover patrolman" />
             </picture>
             <div class="datos-producto">
                 <h3>Patrolman</h3>
@@ -23,7 +23,7 @@ require "includes/templates/header.php";
             <picture>
                 <source srcset="build/img/hiddn.webp" type="image/webp" />
                 <source srcset="build/img/hiddn.jpg" type="image/jpeg" />
-                <img loading="lazy" width="200" height="300" src="build/img/hiddn.jpg" alt="hiddn" />
+                <img loading="lazy" width="200" height="300" src="build/img/hiddn.jpg" alt="cover hiddn" />
             </picture>
             <div class="datos-producto">
                 <h3>Hidin' from the butcher</h3>
@@ -38,7 +38,7 @@ require "includes/templates/header.php";
             <picture>
                 <source srcset="build/img/keepin.webp" type="image/webp" />
                 <source srcset="build/img/keepin.jpg" type="image/jpeg" />
-                <img loading="lazy" width="200" height="300" src="build/img/keepin.jpg" alt="" />
+                <img loading="lazy" width="200" height="300" src="build/img/keepin.jpg" alt="cover keepin" />
             </picture>
             <div class="datos-producto">
                 <h3>Keepin'it Warm</h3>
@@ -69,9 +69,9 @@ require "includes/templates/header.php";
     <div class="contenedor-productos">
         <div class="producto">
             <picture>
-                <source srcset="build/img/beisbolera_logo buffalo_negra.webp" type="image/webp" />
-                <source srcset="build/img/beisbolera_logo buffalo_negra.jpg" type="image/jpeg" />
-                <img loading="lazy" width="200" height="300" src="build/img/beisbolera_logo buffalo_negra.jpg" alt="" />
+                <source srcset="build/img/beisbolera_logo_buffalo_negra.webp" type="image/webp" />
+                <source srcset="build/img/beisbolera_logo_buffalo_negra.jpg" type="image/jpeg" />
+                <img loading="lazy" width="200" height="300" src="build/img/beisbolera_logo_buffalo_negra.jpg" alt="beisbolera logo" />
             </picture>
             <div class="datos-producto">
                 <h3>Modelo beisbolera</h3>
@@ -88,9 +88,9 @@ require "includes/templates/header.php";
         </div>
         <div class="producto">
             <picture>
-                <source srcset="build/img/logo buffalo_negra.webp" type="image/webp" />
-                <source srcset="build/img/logo buffalo_negra.jpg" type="image/jpeg" />
-                <img loading="lazy" width="200" height="300" src="build/img/logo buffalo_negra.jpg" alt="" />
+                <source srcset="build/img/logo_buffalo_negra.webp" type="image/webp" />
+                <source srcset="build/img/logo_buffalo_negra.jpg" type="image/jpeg" />
+                <img loading="lazy" width="200" height="300" src="build/img/logo_buffalo_negra.jpg" alt="camiseta negra" />
             </picture>
             <div class="datos-producto">
                 <h3>Fondo negro</h3>
@@ -107,9 +107,9 @@ require "includes/templates/header.php";
         </div>
         <div class="producto">
             <picture>
-                <source srcset="build/img/logo buffalo_roja.webp" type="image/webp" />
-                <source srcset="build/img/logo buffalo_roja.jpg" type="image/jpeg" />
-                <img loading="lazy" width="200" height="300" src="build/img/logo buffalo_roja.jpg" alt="" />
+                <source srcset="build/img/logo_buffalo_roja.webp" type="image/webp" />
+                <source srcset="build/img/logo_buffalo_roja.jpg" type="image/jpeg" />
+                <img loading="lazy" width="200" height="300" src="build/img/logo_buffalo_roja.jpg" alt="camiseta roja" />
             </picture>
             <div class="datos-producto">
                 <h3>Fondo rojo</h3>

@@ -31,7 +31,7 @@ require "includes/templates/header.php";
             <picture>
                 <source srcset="build/img/hiddn.webp" type="image/webp" />
                 <source srcset="build/img/hiddn.jpg" type="image/jpeg" />
-                <img loading="lazy" width="200" height="300" src="build/img/hiddn.jpg" alt="conver_hidin" />
+                <img loading="lazy" width="200" height="300" src="build/img/hiddn.jpg" alt="cover_hidin" />
             </picture>
 
         </div>

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>The Electric Buffalo</title>
+    <meta name="description" content="Información y promoción de conciertos y otros contenidos de la banda asturiana The Electric Buffalo. Venta en tienda de discos y camisetas">
 
     <link rel="icon" type="image/x-icon" href="build/img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
