@@ -7,6 +7,7 @@ require "includes/templates/header.php";
     <div class="contenido-ficha-disco seccion5">
         <div class="texto-disco">
             <p>Año de edición: 2016</p>
+            <p>Sello: <b>Boomerang Discos</b></p>
             <p>Formato: CD</p>
             <p>Personal:</p>
             <ul>
@@ -30,7 +31,7 @@ require "includes/templates/header.php";
             <picture>
                 <source srcset="build/img/keepin.webp" type="image/webp" />
                 <source srcset="build/img/keepin.jpg" type="image/jpeg" />
-                <img loading="lazy" width="200" height="300" src="build/img/keepin.jpg" alt="cover_keepin" />
+                <img loading="lazy" width="200" height="300" src="build/img/keepin.jpg" alt="cover_keepin" title="Portada Keepin" />
             </picture>
 
         </div>

@@ -7,6 +7,7 @@ require "includes/templates/header.php";
     <div class="contenido-ficha-disco seccion5">
         <div class="texto-disco">
             <p>Año de edición: 2023</p>
+            <p>Sello: <b>Boomerang Discos</b></p>
             <p>Formato: Vinilo</p>
             <p>Personal:</p>
             <ul>
@@ -31,7 +32,7 @@ require "includes/templates/header.php";
             <picture>
                 <source srcset="build/img/cover_patrolman.webp" type="image/webp" />
                 <source srcset="build/img/cover_patrolman.jpg" type="image/jpeg" />
-                <img loading="lazy" width="200" height="300" src="build/img/cover_patrolman.jpg" alt="cover_patrolman" />
+                <img loading="lazy" width="200" height="300" src="build/img/cover_patrolman.jpg" alt="cover_patrolman" title="Portada Patrolman"/>
             </picture>
 
         </div>
@@ -41,7 +42,7 @@ require "includes/templates/header.php";
             <picture>
                 <source srcset="build/img/buffalos_inicios.webp" type="image/webp">
                 <source srcset="build/img/buffalos_inicios.jpg" type="image/jpeg">
-                <img loading="lazy" src="build/img/buffalos_inicios.jpg" alt="buffalos inicio">
+                <img loading="lazy" src="build/img/buffalos_inicios.jpg" alt="buffalos inicio" title="Fotos promo">
             </picture>
         </div>
 

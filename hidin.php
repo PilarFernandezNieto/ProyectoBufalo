@@ -7,6 +7,7 @@ require "includes/templates/header.php";
     <div class="contenido-ficha-disco seccion5">
         <div class="texto-disco">
             <p>Año de edición: 2009</p>
+            <p>Sello: <b>Ouroboros Records</b></p>
             <p>Formato: CD</p>
             <p>Personal:</p>
             <ul>
@@ -31,7 +32,7 @@ require "includes/templates/header.php";
             <picture>
                 <source srcset="build/img/hiddn.webp" type="image/webp" />
                 <source srcset="build/img/hiddn.jpg" type="image/jpeg" />
-                <img loading="lazy" width="200" height="300" src="build/img/hiddn.jpg" alt="cover_hidin" />
+                <img loading="lazy" width="200" height="300" src="build/img/hiddn.jpg" alt="cover_hidin" title="Portada Hiddin" />
             </picture>
 
         </div>

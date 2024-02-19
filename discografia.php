@@ -8,7 +8,7 @@ require "includes/templates/header.php";
             <picture>
                 <source srcset="build/img/hiddn.webp" type="image/webp" />
                 <source srcset="build/img/hiddn.jpg" type="image/jpeg" />
-                <img loading="lazy" class="img-fluid" src="hiddn.jpg" alt="cover hiddn" />
+                <img loading="lazy" class="img-fluid" src="hiddn.jpg" alt="cover hiddn" title="Portada Hiddin" />
             </picture>
             <div class="contenido-disco">
                 <h2>Hidin' from the butcher</h2>
@@ -33,7 +33,7 @@ require "includes/templates/header.php";
             <picture>
                 <source srcset="build/img/keepin.webp" type="image/webp" />
                 <source srcset="build/img/keepin.jpg" type="image/jpeg" />
-                <img loading="lazy" width="200" height="300" src="keepin.jpg" alt="cover keepin" />
+                <img loading="lazy" width="200" height="300" src="keepin.jpg" alt="cover keepin" title="Portada Keepin" />
             </picture>
             <div class="contenido-disco">
                 <h2>Keepin'it Warm</h2>
@@ -66,7 +66,7 @@ require "includes/templates/header.php";
         <div class="disco">
             <picture>
                 <source srcset="build/img/cover_patrolman.webp" type="image/webp" />
-                <img loading="lazy" width="200" height="300" src="cover_patrolman.jpg" alt="cover patrolman" />
+                <img loading="lazy" width="200" height="300" src="cover_patrolman.jpg" alt="cover patrolman" title="Portada Patrolman" />
             </picture>
             <div class="contenido-disco">
                 <h2>Patrolman</h2>

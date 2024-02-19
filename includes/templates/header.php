@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>The Electric Buffalo</title>
-    <meta name="description" content="Información y promoción de conciertos y otros contenidos de la banda asturiana The Electric Buffalo. Venta en tienda de discos y camisetas">
+    <meta name="description" content="The Electric Buffalo es una banda de rock asturiana que te llevará en un viaje musical emocionante con la seña de identidad de &quot;lo americano&quot;. Únete a la manada.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="The Electric Buffalo" />
+    <meta property="og:description" content="Website de la banda de rock asturiana The Electric Buffalo" />
+    <meta property="og:url" content="https://www.theelectricbuffalo.com" />
 
     <link rel="icon" type="image/x-icon" href="build/img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +27,20 @@
     <script src="build/js/jquery-3.7.1.min.js"></script>
 
     <script src="https://kit.fontawesome.com/91eae316a2.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/e79408189430261e22a99565d6b38640.js"></script>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QB6GV2DF3D"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QB6GV2DF3D');
+</script>
 
 <body>
     <header class="header">
@@ -38,10 +56,13 @@
                         <i class="fa-brands fa-youtube"></i>
                     </a>
                     <a href="https://www.instagram.com/theelectricbuffalo/" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
                     </a>
                     <a href="https://open.spotify.com/intl-es/artist/4ciUFLaycqUBlM162ifmSH?si=eugYIzlWQnqkxGXJMXzYcw" target="_blank">
                         <i class="fa-brands fa-spotify"></i>
+                    </a>
+                    <a href="https://www.facebook.com/TheElectricBuffalo" target="_blank">
+                        <i class="fa-brands fa-square-facebook"></i>
                     </a>
                 </div>
                 <nav class="navegacion-principal">

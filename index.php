@@ -4,6 +4,7 @@ require "includes/templates/header.php";
 <div class="imagen-header">
     <div class="overlay-header"></div>
 </div>
+<span class="caption text-end">Foto de Paco Vigil</span>
 <!-- CONTENIDO DESTACADO -->
 <section class="contenedor contenido-destacado">
     <div class="imagen cover">
@@ -11,7 +12,7 @@ require "includes/templates/header.php";
             <picture>
                 <source srcset="build/img/cover_patrolman.webp" type="image/webp" />
                 <source srcset="build/img/cover_patrolman.jpg" type="image/jpeg" />
-                <img loading="lazy" width="200" height="300" src="build/img/cover_patrolman.jpg" alt="cover_patrolman" />
+                <img loading="lazy" width="200" height="300" src="build/img/cover_patrolman.jpg" alt="cover_patrolman" title="Portada Patrolman"/>
             </picture>
         </a>
     </div>
@@ -68,6 +69,14 @@ require "includes/templates/header.php";
                     <img loading="lazy" width="200" height="300" src="build/img/spotifty.png" alt="logo-spotify" class="spotify" />
                 </picture>
             </a>
+            <a href="https://www.facebook.com/TheElectricBuffalo" target="_blank">
+                <picture>
+                    <source srcset="build/img/facebook_logo.webp" type="image/webp" />
+                    <source srcset="build/img/facebook_logo.jpeg" type="image/jpeg" />
+                    <img loading="lazy" width="200" height="300" src="build/img/facebook_logo.jpeg" alt="facebook_logo" class="facebook" />
+                </picture>
+            </a>
+
 
         </article>
     </div>
@@ -77,8 +86,8 @@ require "includes/templates/header.php";
 <section class="imagen-central">
     <div class="overlay-central"></div>
     <div class="contenido-central">
-        <h3>Este es nuestro trabajo</h3>
-        <a href="discografia.php" class="boton-fireBrick">Discografía</a>
+        <h3>Discografía del Búfalo Eléctrico</h3>
+        <a href="discografia.php" class="boton-fireBrick">Pincha aquí</a>
     </div>
 
 
@@ -93,7 +102,8 @@ require "includes/templates/header.php";
         <div class="noticia">
             <picture>
                 <source srcset="build/img/amas-disco.webp" type="image/webp" />
-                <img loading="lazy" width="200" height="300" src="build/img/amas-disco.jpg" alt="promo amas" />
+                <source srcset="build/img/amas-disco.jpg" type="image/jpeg" />
+                <img loading="lazy" width="200" height="300" src="build/img/amas-disco.jpg" alt="promo amas" title="Cartel Premios Amas" />
             </picture>
             <div class="contenido-noticias">
                 <h3>Nominación Mejor Disco Rock</h3>
@@ -103,14 +113,15 @@ require "includes/templates/header.php";
                 </div>
 
                 <p class="fecha alinear-derecha">11/02/2024</p>
-              
+
             </div> <!-- fin contenido-noticias -->
         </div> <!-- fin noticia -->
 
         <div class="noticia">
             <picture>
                 <source srcset="build/img/cartel-factoria.webp" type="image/webp" />
-                <img loading="lazy" width="200" height="300" src="build/img/cartel-factoria.jpg" alt="promo factoria" />
+                <source srcset="build/img/cartel-factoria.jpg" type="image/jpeg" />
+                <img loading="lazy" width="200" height="300" src="build/img/cartel-factoria.jpg" alt="promo factoria" title="Cartel Factoría Cultural Avilés" />
             </picture>
 
 
@@ -125,7 +136,7 @@ require "includes/templates/header.php";
                 </div>
 
                 <p class="fecha alinear-derecha">11/02/2024</p>
-               
+
             </div> <!-- fin contenido-noticias -->
         </div> <!-- fin noticia -->
     </div> <!-- fin contenedor-noticias -->

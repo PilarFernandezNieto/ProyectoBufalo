@@ -7,14 +7,17 @@
     </nav>
     <div class="datos-footer">
         <div class="redes-sociales">
-            <a href="https://www.youtube.com/@theelectricbuffalo666" class="youtube" target="_blank">
+            <a href="https://www.youtube.com/@theelectricbuffalo666" target="_blank">
                 <i class="fa-brands fa-youtube"></i>
             </a>
-            <a href="https://www.instagram.com/theelectricbuffalo/" class="insta" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
+            <a href="https://www.instagram.com/theelectricbuffalo/" target="_blank">
+                <i class="fa-brands fa-square-instagram"></i>
             </a>
             <a href="https://open.spotify.com/intl-es/artist/4ciUFLaycqUBlM162ifmSH?si=eugYIzlWQnqkxGXJMXzYcw" target="_blank">
                 <i class="fa-brands fa-spotify"></i>
+            </a>
+            <a href="https://www.facebook.com/TheElectricBuffalo" target="_blank">
+                <i class="fa-brands fa-square-facebook"></i>
             </a>
         </div>
         <div class="contacto ">
