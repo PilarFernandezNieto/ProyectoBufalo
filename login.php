@@ -6,8 +6,7 @@ $db = conectarDB();
 $errores = [];
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-
-
+    
     $email = mysqli_real_escape_string($db, filter_var($_POST["email"], FILTER_VALIDATE_EMAIL));
     $password = mysqli_real_escape_string($db, $_POST["password"]);
 
@@ -18,7 +17,31 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $errores[] = "La contraseña es obligatoria";
     }
    if(empty($errores)){
-    
+    $query = "SELECT * FROM usuarios WHERE email= '{$email}'";
+    $resultado = mysqli_query($db, $query);
+
+    if($resultado->num_rows){
+        $usuario = mysqli_fetch_assoc($resultado);
+            
+
+        $auth = password_verify($password, $usuario["password"]);
+        if($auth){
+            if(!session_start()){
+                session_start();
+            }
+            $_SESSION["usuario"] = $usuario["email"];
+            $_SESSION["rol"] = $usuario["idrol"];
+            $_SESSION["login"] = true;
+
+        } else {
+            $errores[] = "El password es incorrecto";
+        }
+        
+        
+
+    } else {
+        $errores[] = "El usuario no existe";
+    }
    }
 }
 
