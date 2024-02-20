@@ -1,5 +1,9 @@
 <?php
 require "../../includes/app.php";
+$auth = estaAutenticado();
+if (!$auth) {
+    header("Location: /");
+}
 $db = conectarDB();
 $id = filter_var($_GET["id"], FILTER_VALIDATE_INT);
 

@@ -1,6 +1,12 @@
 <?php
-$resultado = $_GET["resultado"] ?? "";
 require "../../includes/app.php";
+
+$auth = estaAutenticado();
+if(!$auth){
+    header("Location: /");
+}
+$resultado = $_GET["resultado"] ?? "";
+
 $db = conectarDB();
 $query = "SELECT * FROM noticias";
 $consulta = mysqli_query($db, $query);

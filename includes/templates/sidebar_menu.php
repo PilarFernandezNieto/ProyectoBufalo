@@ -1,3 +1,13 @@
+<?php
+if (!isset($_SESSION)) {
+    session_start();
+}
+$auth = $_SESSION["login"] ?? false;
+
+
+?>
+
+
 <!DOCTYPE html>
 
 <head>
@@ -30,7 +40,7 @@
                 <input class="app-search__input" type="search" placeholder="Buscar">
                 <button class="app-search__button"><i class="bi bi-search"></i></button>
 
-            <li class="dropdown"><a class="app-nav__item" href="#" data-bs-toggle="dropdown" aria-label="Show notifications"><i class="bi bi-bell fs-5"></i></a>
+            <li class="dropdown"><a class="app-nav__item" href="#" data-bs-toggle="dropdown" aria-label="Show notifications"><i class="bi bi-bell"></i></a>
                 <ul class="app-notification dropdown-menu dropdown-menu-right">
                     <li class="app-notification__title">You have 4 new notifications.</li>
                     <div class="app-notification__content">
@@ -75,11 +85,11 @@
                 </ul>
             </li>
             <!-- User Menu -->
-            <li class="dropdown"><a class="app-nav__item" href="#" data-bs-toggle="dropdown" aria-label="Open Profile Menu"><i class="bi bi-person fs-4"></i></a>
+            <li class="dropdown"><a class="app-nav__item" href="#" data-bs-toggle="dropdown" aria-label="Open Profile Menu"><i class="bi bi-person"></i></a>
                 <ul class="dropdown-menu settings-menu dropdown-menu-right">
                     <li><a class="dropdown-item" href="page-user.html"><i class="bi bi-gear me-2 fs-5"></i> Settings</a></li>
                     <li><a class="dropdown-item" href="page-user.html"><i class="bi bi-person me-2 fs-5"></i> Profile</a></li>
-                    <li><a class="dropdown-item" href="page-login.html"><i class="bi bi-box-arrow-right me-2 fs-5"></i> Logout</a></li>
+                    <li><a class="dropdown-item" href="/logout.php"><i class="bi bi-box-arrow-right me-2 fs-5"></i> Logout</a></li>
                 </ul>
             </li>
         </ul>

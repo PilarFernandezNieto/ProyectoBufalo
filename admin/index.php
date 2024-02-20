@@ -1,13 +1,12 @@
 <?php
-session_start();
+ 
 require "../includes/app.php";
 
-
-$auth = $_SESSION["login"];
-
-if(!$auth){
+$auth = estaAutenticado();
+if (!$auth) {
   header("Location: /");
 }
+
 incluirTemplate("sidebar_menu");
 ?>
 <main class="app-content contenedor seccion admin">

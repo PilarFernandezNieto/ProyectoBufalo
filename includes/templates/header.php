@@ -1,3 +1,11 @@
+<?php
+if (!isset($_SESSION)) {
+    session_start();
+}
+$auth = $_SESSION["login"] ?? false;
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,6 +38,11 @@
             <p class="menu-mobile"><i class="fa-solid fa-bars"></i></p>
             <div class="header-derecha">
                 <div class="redes-sociales">
+                    <?php if(!$auth) { ?>
+                    <a href="login.php" class="fs-3 me-5">Iniciar sesión</a>
+                    <?php } else { ?>
+                        <a href="logout.php" class="fs-3 me-5">Cerrar sesión</a>
+                    <?php } ?>
                     <a href="https://www.youtube.com/@theelectricbuffalo666" class="youtube" target="_blank">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
@@ -45,8 +58,6 @@
                     <a href="discografia.php">Discografía</a>
                     <a href="tienda.php">Tienda</a>
                     <a href="contacto.php">Contacto</a>
-                    <a href="/admin/index.php">Admin</a>
-                    <a href="login.php">Iniciar sesión</a>
                 </nav>
             </div>
 
