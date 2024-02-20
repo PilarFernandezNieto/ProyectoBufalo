@@ -10,7 +10,7 @@
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website" />
     <meta property="og:title" content="The Electric Buffalo" />
-    <meta property="og:description" content="Website de la banda de rock asturiana The Electric Buffalo" />
+    <meta property="og:description" content="Descubre el potente sonido de la banda de rock asturiana The Electric Buffalo. Rock clásico con influencias americanas y energía contemporánea." />
     <meta property="og:url" content="https://www.theelectricbuffalo.com" />
 
     <link rel="icon" type="image/x-icon" href="build/img/favicon.ico">
