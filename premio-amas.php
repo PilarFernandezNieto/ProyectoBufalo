@@ -1,6 +1,5 @@
 <?php
 require "includes/templates/header.php";
-require "includes/funciones.php";
 ?>
 
 <main class="contenedor seccion5 alto-min contenido-centrado">
