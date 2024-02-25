@@ -1,11 +1,6 @@
 .contenedor-noticias2 {
   margin: 0 auto;
   @include desktop {
-<<<<<<< HEAD
-    @include grid(3, 2rem);
-  }
-
-=======
     @include grid(2, 2rem);
   }
 
@@ -17,7 +12,6 @@
   }
 
 
->>>>>>> estatico
 }
 .escala {
   transition: transform 0.3s ease;
@@ -29,11 +23,7 @@
   background-color: lighten($claro, 15);
   border-radius: 3.75px;
   margin-bottom: 2rem;
-<<<<<<< HEAD
-  transition: box-shadow 0.5s ease, transform 0.3s ease;
-=======
   transition: box-shadow 0.8s ease, transform 0.3s ease;
->>>>>>> estatico
   @include desktop {
     margin-bottom: 0;
   }
@@ -54,29 +44,18 @@
     h3 {
       margin-bottom: 2rem;
       color: $fireBrick;
-<<<<<<< HEAD
-      min-height: 10rem;
-=======
       min-height: 8rem;
->>>>>>> estatico
       display: flex;
       align-items: center;
     }
     h4 {
-<<<<<<< HEAD
-      font-size: 2rem;
-=======
       font-size: 2.4rem;
->>>>>>> estatico
       margin-bottom: 1rem;
     }
     .texto {
       font-size: 1.6rem;
       line-height: 1.8;
       min-height: 20rem;
-<<<<<<< HEAD
-  
-=======
     }
     a {
       color: $negro;
@@ -85,7 +64,6 @@
       &:hover {
         color: $fireBrick;
       }
->>>>>>> estatico
     }
  
   }

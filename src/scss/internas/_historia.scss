@@ -1,10 +1,6 @@
 .contenido-filas {
   display: grid;
-<<<<<<< HEAD
-  grid-template-rows: repeat(2 1fr);
-=======
   grid-template-rows: 1fr 1fr;
->>>>>>> estatico
 }
 .contenido-historia {
   display: grid;
@@ -12,28 +8,15 @@
   @include desktop {
     @include grid(2, 2rem);
     align-items: end;
-<<<<<<< HEAD
-
- }
-=======
   }
->>>>>>> estatico
 }
 
 
 .texto-historia {
-<<<<<<< HEAD
-  @include desktop{
-     max-height: 70rem;
-     overflow: hidden;
-  }
- 
-=======
   @include desktop {
     max-height: 70rem;
     overflow: hidden;
   }
->>>>>>> estatico
 
   h2 {
     color: $fireBrick;
@@ -43,27 +26,6 @@
   p {
     font-size: 1.6rem;
   }
-<<<<<<< HEAD
-}
-.texto-historia-100 {
-  margin-top: 2rem;
-  max-height: 102rem;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
-  
-  @include desktop{
-    margin-top: 0;
-
-  }
-}
-.caja-final {
-  display: flex;
-  flex-direction: column;
-=======
->>>>>>> estatico
 }
 .texto-historia-100 {
   margin-top: 2rem;

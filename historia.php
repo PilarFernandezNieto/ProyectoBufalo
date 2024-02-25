@@ -191,7 +191,6 @@ require "includes/templates/header.php";
     </div>
 </section>
 
-
 <?php
-incluirTemplate("footer");
+include "includes/templates/footer.php";
 ?>
