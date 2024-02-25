@@ -1,8 +1,5 @@
 <?php
-require "includes/app.php";
-$db = conectarDB();
-incluirTemplate("header");
-
+require "includes/templates/header.php";
 ?>
 <main class="contenedor seccion">
     <h1>Discos</h1>
@@ -11,7 +8,7 @@ incluirTemplate("header");
             <picture>
                 <source srcset="build/img/cover_patrolman.webp" type="image/webp" />
                 <source srcset="build/img/cover_patrolman.jpg" type="image/jpeg" />
-                <img loading="lazy" width="200" height="300" src="build/img/cover_patrolman.webp.jpg" alt="" />
+                <img loading="lazy" width="200" height="300" src="build/img/cover_patrolman.webp.jpg" alt="cover patrolman" title="Portada Patrolman" />
             </picture>
             <div class="datos-producto">
                 <h3>Patrolman</h3>
@@ -26,7 +23,7 @@ incluirTemplate("header");
             <picture>
                 <source srcset="build/img/hiddn.webp" type="image/webp" />
                 <source srcset="build/img/hiddn.jpg" type="image/jpeg" />
-                <img loading="lazy" width="200" height="300" src="build/img/hiddn.jpg" alt="hiddn" />
+                <img loading="lazy" width="200" height="300" src="build/img/hiddn.jpg" alt="cover hiddn" title="Portada Hiddin" />
             </picture>
             <div class="datos-producto">
                 <h3>Hidin' from the butcher</h3>
@@ -41,7 +38,7 @@ incluirTemplate("header");
             <picture>
                 <source srcset="build/img/keepin.webp" type="image/webp" />
                 <source srcset="build/img/keepin.jpg" type="image/jpeg" />
-                <img loading="lazy" width="200" height="300" src="build/img/keepin.jpg" alt="" />
+                <img loading="lazy" width="200" height="300" src="build/img/keepin.jpg" alt="cover keepin" title="Portada Keepin" />
             </picture>
             <div class="datos-producto">
                 <h3>Keepin'it Warm</h3>
@@ -72,9 +69,9 @@ incluirTemplate("header");
     <div class="contenedor-productos">
         <div class="producto">
             <picture>
-                <source srcset="build/img/beisbolera_logo buffalo_negra.webp" type="image/webp" />
-                <source srcset="build/img/beisbolera_logo buffalo_negra.jpg" type="image/jpeg" />
-                <img loading="lazy" width="200" height="300" src="build/img/beisbolera_logo buffalo_negra.jpg" alt="" />
+                <source srcset="build/img/beisbolera_logo_buffalo_negra.webp" type="image/webp" />
+                <source srcset="build/img/beisbolera_logo_buffalo_negra.jpg" type="image/jpeg" />
+                <img loading="lazy" width="200" height="300" src="build/img/beisbolera_logo_buffalo_negra.jpg" alt="beisbolera logo" title="Beisbolera con logo" />
             </picture>
             <div class="datos-producto">
                 <h3>Modelo beisbolera</h3>
@@ -91,9 +88,9 @@ incluirTemplate("header");
         </div>
         <div class="producto">
             <picture>
-                <source srcset="build/img/logo buffalo_negra.webp" type="image/webp" />
-                <source srcset="build/img/logo buffalo_negra.jpg" type="image/jpeg" />
-                <img loading="lazy" width="200" height="300" src="build/img/logo buffalo_negra.jpg" alt="" />
+                <source srcset="build/img/logo_buffalo_negra.webp" type="image/webp" />
+                <source srcset="build/img/logo_buffalo_negra.jpg" type="image/jpeg" />
+                <img loading="lazy" width="200" height="300" src="build/img/logo_buffalo_negra.jpg" alt="camiseta negra" title="Camiseta negra" />
             </picture>
             <div class="datos-producto">
                 <h3>Fondo negro</h3>
@@ -110,9 +107,9 @@ incluirTemplate("header");
         </div>
         <div class="producto">
             <picture>
-                <source srcset="build/img/logo buffalo_roja.webp" type="image/webp" />
-                <source srcset="build/img/logo buffalo_roja.jpg" type="image/jpeg" />
-                <img loading="lazy" width="200" height="300" src="build/img/logo buffalo_roja.jpg" alt="" />
+                <source srcset="build/img/logo_buffalo_roja.webp" type="image/webp" />
+                <source srcset="build/img/logo_buffalo_roja.jpg" type="image/jpeg" />
+                <img loading="lazy" width="200" height="300" src="build/img/logo_buffalo_roja.jpg" alt="camiseta roja" title="Camiseta roja"/>
             </picture>
             <div class="datos-producto">
                 <h3>Fondo rojo</h3>
@@ -132,5 +129,5 @@ incluirTemplate("header");
 
 
 <?php
-incluirTemplate("footer");
+include "includes/templates/footer.php";
 ?>

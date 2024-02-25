@@ -5,6 +5,7 @@
         <a href="discografia.php">Discografía</a>
         <a href="tienda.php">Tienda</a>
     </nav>
+<<<<<<< HEAD
     <section class="datos-footer">
         <div class="redes-sociales">
             <a href="https://www.youtube.com/@theelectricbuffalo666" class="youtube" target="_blank">
@@ -12,16 +13,37 @@
             </a>
             <a href="https://www.instagram.com/theelectricbuffalo/" class="insta" target="_blank">
                 <i class="fa-brands fa-instagram"></i>
+=======
+    <div class="datos-footer">
+        <div class="redes-sociales">
+            <a href="https://www.youtube.com/@theelectricbuffalo666" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/theelectricbuffalo/" target="_blank">
+                <i class="fa-brands fa-square-instagram"></i>
+>>>>>>> estatico
             </a>
             <a href="https://open.spotify.com/intl-es/artist/4ciUFLaycqUBlM162ifmSH?si=eugYIzlWQnqkxGXJMXzYcw" target="_blank">
                 <i class="fa-brands fa-spotify"></i>
             </a>
+<<<<<<< HEAD
         </div>
         <div class="contacto ">
             <a href="mailto:theelectricbuffalo.com" target="_black">info@theelectricbuffalo.com</a>
         </div>
 
     </section>
+=======
+            <a href="https://www.facebook.com/TheElectricBuffalo" target="_blank">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a>
+        </div>
+        <div class="contacto ">
+            <a href="mailto:theelectricbuffalo.com" target="_blank">info@theelectricbuffalo.com</a>
+        </div>
+
+    </div>
+>>>>>>> estatico
     <p>The Electric Buffalo. Todos los derechos reservados</p>
 
 
