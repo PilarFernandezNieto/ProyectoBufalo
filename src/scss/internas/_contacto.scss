@@ -1,6 +1,10 @@
 .contenedor-formulario {
+  width: 90%;
+    margin: 5rem auto;
+  @include desktop{
   width: 50%;
-  margin: 5rem auto;
+
+  }
 }
 .formulario {
   border: 1px solid $oilBlack;
