@@ -162,7 +162,9 @@ require "includes/templates/header.php";
             </div> <!-- fin contenido-noticias -->
         </div> <!-- fin noticia -->
     </div> <!-- fin contenedor-noticias -->
-
+    <div class="alinear-derecha">
+        <a href="/noticias.php" class="boton-fireBrick">Ver todas</a>
+    </div>
 
 
 
