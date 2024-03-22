@@ -5,6 +5,15 @@
   width: 50%;
 
   }
+  a {
+    font-size: 2rem;
+    color: $negro;
+    font-weight: bold;
+    &:hover {
+      color: $fireBrick;
+      text-decoration: underline;
+    }
+  }
 }
 .formulario {
   border: 1px solid $oilBlack;

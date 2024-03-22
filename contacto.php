@@ -3,7 +3,7 @@ require "includes/templates/header.php";
 ?>
 <main class="contenedor-formulario">
     <h1>Contacta con nosotros</h1>
-    <p>Utiliza este formulario o escríbenos a <span>info@theelectricbuffalo.com</span></p>
+    <p class="text-center">Si quieres ponerte en contacto con nosotros rellena este formulario o escríbenos directamente a  <a href="mailto:info@theelectricbuffalo.com" target="_blank">info@theelectricbuffalo.com</a></p>
     <form class="formulario" method="POST" action="./contactar.php" >
         <div class="row">
             <div class="col-12 col-md-5">

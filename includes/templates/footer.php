@@ -4,6 +4,7 @@
         <a href="historia.php">Historia</a>
         <a href="discografia.php">Discografía</a>
         <a href="tienda.php">Tienda</a>
+        <a href="contacto.php">Contacto</a>
     </nav>
     <div class="datos-footer">
         <div class="redes-sociales">

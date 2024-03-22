@@ -58,7 +58,7 @@ require "includes/templates/header.php";
     <div class="contenido-central">
         <h3>Nuestra tienda está en construcción</h3>
         <p>Si te interesa alguno de nuestros productos o quieres ponerte en contacto con nosotros, escríbenos</p>
-        <a href="mailto:info@theelectricbuffalo.com " class="boton-fireBrick">info@theelectricbuffalo.com</a>
+        <a href="mailto:info@theelectricbuffalo.com " class="boton-fireBrick" target="_blank">info@theelectricbuffalo.com</a>
     </div>
 
 
