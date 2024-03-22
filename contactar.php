@@ -1,9 +1,7 @@
 <?php 
-require "includes/app.php";
 
+require_once "vendor/autoload.php";
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
@@ -19,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
     try {
-        $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+      
         $mail->isSMTP();
 
         $mail->Host = "smtp.ionos.es";
@@ -47,6 +45,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail->Body = $contenido;
         $mail->AltBody = "Esto es texto alternativo sin HTML";
         $mail->send();
+        
+        header("Location: mensaje_enviado.php");
+       
     } catch (Exception $e) {
         echo "Error al enviar el correo: {$mail->ErrorInfo} <br>";
     }
