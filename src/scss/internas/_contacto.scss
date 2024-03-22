@@ -1,9 +1,8 @@
 .contenedor-formulario {
   width: 90%;
-    margin: 5rem auto;
-  @include desktop{
-  width: 50%;
-
+  margin: 5rem auto;
+  @include desktop {
+    width: 50%;
   }
   a {
     font-size: 2rem;
@@ -14,6 +13,14 @@
       text-decoration: underline;
     }
   }
+}
+.contenedor-mensaje {
+  width: 90%;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 .formulario {
   border: 1px solid $oilBlack;
@@ -43,16 +50,13 @@
   }
 }
 .ancho-login {
-  @include tablet{
+  @include tablet {
     width: 50%;
   }
-  
 }
 .seccion-login {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  
-
 }
