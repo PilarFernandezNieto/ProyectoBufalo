@@ -7,6 +7,27 @@ require "includes/templates/header.php";
     <div class="contenedor-noticias3">
         <div class="noticia">
             <picture>
+                <source srcset="build/img/factoria-sold-out.webp" type="image/webp" />
+                <source srcset="build/img/factoria-sold-out.jpeg" type="image/jpeg" />
+                <img loading="lazy" width="200" height="300" src="build/img/factoria-sold-out.jpeg" alt="sold out factoria" title="Cartel Sold Out Factoria Avilés" />
+            </picture>
+            <div class="contenido-noticias">
+                <h3>Sold Out en la Factoría Cultural de Avilés</h3>
+                <h4>Entradas agotadas</h4>
+                <div class="texto">
+                    <p>¡Gracias, familia!</p>
+                    <p>Nos hace mucha ilusión anunciar que habéis completado el aforo disponible para el concierto del próximo <b>sábado, 23 de marzo</b> en la Factoría Cultural de Avilés.</p>
+                    <p>¡Va a estar lleno! Y, la verdad, no nos lo esperábamos. Prometemos sudar la camisa de cuadros como siempre... O quizá un poco más, debido al subidón y las ganas de estampida que tenemos ahora mismo. ¡Oh, sí! </p>
+                    <p>Este sábado a las <b>21:00</b>.</p>
+                    <p>¡Nos vemos allí!</p>
+                </div>
+
+                <p class="fecha alinear-derecha">17/03/2024</p>
+
+            </div> <!-- fin contenido-noticias -->
+        </div> <!-- fin noticia -->
+        <div class="noticia">
+            <picture>
                 <source srcset="build/img/willy_alvaro_amas.webp" type="image/webp" />
                 <source srcset="build/img/willy_alvaro_amas.jpg" type="image/jpeg" />
                 <img loading="lazy" width="200" height="300" src="build/img/willy_alvaro_amas.jpg" alt="Premio Amas" title="Alvaro y Wilón en los AMAS" />
