@@ -27,20 +27,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail->SMTPSecure = "tls";
         $mail->Port = 587;
 
-        // $mail->SMTPOptions = array(
-        //     'ssl' => array(
-        //         'verify_peer' => false,
-        //         'verify_peer_name' => false,
-        //         'allow_self_signed' => true
-        //     )
-        // );
-
         $mail->setFrom("info@theelectricbuffalo.com", $remite);
         $mail->addAddress("info@theelectricbuffalo.com", "The Electric Buffalo");
         $mail->Subject = "Tienes un nuevo mensaje desde la web";
         $mail->isHTML(true);
         $mail->CharSet = "UTF-8";
-        $contenido = "<html><p>" . $mensaje . "</p></html>";
+        $contenido = "<html><p>" . $mensaje . "</p>";
+        $contenido .= "<P>Mensaje enviado por " . $remite . "</p>";
+        $contenido .= "<p>Desde " . $localidad . ", " . $privincia . "</p>";
+        $contenido .= "<p>Dirección: " . $direccion . "</p>";
+        $contenido .= "<p>Teléfono: " . $telefono . "</p>";
+        $contenido .= "<p>" . $email . "</p>";
+        $contenido .= "</html>";
 
         $mail->Body = $contenido;
         $mail->AltBody = "Esto es texto alternativo sin HTML";
