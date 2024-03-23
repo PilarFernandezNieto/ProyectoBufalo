@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail->SMTPAuth = true;
         $mail->Username = "info@theelectricbuffalo.com";
         $mail->Password = "QDj7yNir8?UmUQ+";
-        $mail->SMTPSecure = "tls";
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
         $mail->setFrom("info@theelectricbuffalo.com", $remite);
@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail->CharSet = "UTF-8";
         $contenido = "<html><p>" . $mensaje . "</p>";
         $contenido .= "<P>Mensaje enviado por " . $remite . "</p>";
-        $contenido .= "<p>Desde " . $localidad . ", " . $privincia . "</p>";
+        $contenido .= "<p>Desde " . $localidad . ", " . $provincia . "</p>";
         $contenido .= "<p>Dirección: " . $direccion . "</p>";
         $contenido .= "<p>Teléfono: " . $telefono . "</p>";
         $contenido .= "<p>" . $email . "</p>";
