@@ -2,11 +2,14 @@
 
 require_once "vendor/autoload.php";
 use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
+
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
     $contacto = $_POST["contacto"];
-    $mail = new PHPMailer;
+    $mail = new PHPMailer(true);
     $remite = $contacto["nombre"] . " " . $contacto["apellidos"];
     $email = $contacto["email"];
     $telefono = $contacto["telefono"];
@@ -17,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
     try {
+        //$mail->SMTPDebug = 2;
       
         $mail->isSMTP();
 
@@ -29,6 +33,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         $mail->setFrom("info@theelectricbuffalo.com", $remite);
         $mail->addAddress("info@theelectricbuffalo.com", "The Electric Buffalo");
+        $mail->AddReplyTo($email, $remite);
+
         $mail->Subject = "Tienes un nuevo mensaje desde la web";
         $mail->isHTML(true);
         $mail->CharSet = "UTF-8";
