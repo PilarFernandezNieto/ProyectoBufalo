@@ -3,7 +3,12 @@ require "includes/templates/header.php";
 ?>
 <div class="imagen-header">
     <div class="overlay-header"></div>
+    <div class="contenedor contenido-imagen">
+        <h2>The Electric Buffalo</h2>
+        <p>Patrolman</p>
+    </div>
 </div>
+
 <span class="caption text-end">Foto de Paco Vigil</span>
 <!-- CONTENIDO DESTACADO -->
 <section class="contenedor contenido-destacado">
