@@ -2,11 +2,14 @@
 
 require_once "vendor/autoload.php";
 use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
+
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
     $contacto = $_POST["contacto"];
-    $mail = new PHPMailer;
+    $mail = new PHPMailer(true);
     $remite = $contacto["nombre"] . " " . $contacto["apellidos"];
     $email = $contacto["email"];
     $telefono = $contacto["telefono"];
@@ -17,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
     try {
+        //$mail->SMTPDebug = 2;
       
         $mail->isSMTP();
 
@@ -24,17 +28,19 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail->SMTPAuth = true;
         $mail->Username = "info@theelectricbuffalo.com";
         $mail->Password = "QDj7yNir8?UmUQ+";
-        $mail->SMTPSecure = "tls";
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
         $mail->setFrom("info@theelectricbuffalo.com", $remite);
         $mail->addAddress("info@theelectricbuffalo.com", "The Electric Buffalo");
+        $mail->AddReplyTo($email, $remite);
+
         $mail->Subject = "Tienes un nuevo mensaje desde la web";
         $mail->isHTML(true);
         $mail->CharSet = "UTF-8";
         $contenido = "<html><p>" . $mensaje . "</p>";
         $contenido .= "<P>Mensaje enviado por " . $remite . "</p>";
-        $contenido .= "<p>Desde " . $localidad . ", " . $privincia . "</p>";
+        $contenido .= "<p>Desde " . $localidad . ", " . $provincia . "</p>";
         $contenido .= "<p>Dirección: " . $direccion . "</p>";
         $contenido .= "<p>Teléfono: " . $telefono . "</p>";
         $contenido .= "<p>" . $email . "</p>";
